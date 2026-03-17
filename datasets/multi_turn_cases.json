@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "scenario": "Customer support - order issue",
+    "conversation": [
+      {"role": "user", "content": "Hi, I ordered a laptop last week (order #12345) and it still hasn't shipped. What's going on?"},
+      {"role": "assistant", "content": "I apologize for the delay with your order #12345. Let me look into this for you right away. I can see that your order is currently in our processing queue. There was a slight delay due to high demand, but it should ship within the next 24-48 hours. You'll receive a tracking number via email once it ships."},
+      {"role": "user", "content": "That's what I was told 3 days ago. I need this laptop for a presentation on Friday. Can you expedite it or should I cancel and buy elsewhere?"},
+      {"role": "assistant", "content": "I completely understand your frustration, and I'm sorry for the repeated delays. Given the urgency of your situation, I have two options for you: (1) I can escalate this to our fulfillment team for priority overnight shipping at no extra cost, which would get it to you by Thursday, or (2) I can process a full refund immediately if you'd prefer to purchase elsewhere. Which would you prefer?"},
+      {"role": "user", "content": "Let's try the overnight shipping. But if it doesn't ship today, I want the refund."},
+      {"role": "assistant", "content": "Absolutely. I've escalated your order for priority overnight shipping and flagged it as urgent. Here's what I've done: (1) Escalated to fulfillment team with priority status, (2) Applied complimentary overnight shipping upgrade, (3) Set a reminder to personally check the status by end of business today. If it hasn't shipped by 6 PM EST today, I'll automatically initiate your full refund. You'll receive a confirmation email shortly with these details. Is there anything else I can help with?"}
+    ],
+    "quality_scores": {
+      "coherence": 9,
+      "helpfulness": 9,
+      "empathy": 8,
+      "resolution": 9,
+      "escalation_handling": 10
+    },
+    "notes": "Strong customer service - acknowledges frustration, provides concrete options, sets clear expectations and fallback"
+  },
+  {
+    "id": 2,
+    "scenario": "Technical support - software bug",
+    "conversation": [
+      {"role": "user", "content": "My app keeps crashing when I try to export data to CSV. I'm using version 3.2.1 on macOS."},
+      {"role": "assistant", "content": "I'd be happy to help you with the CSV export issue. This is a known issue that can occur in version 3.2.1. Have you tried restarting the application?"},
+      {"role": "user", "content": "Yes, I've restarted it multiple times. I've also tried reinstalling. The crash happens specifically when the dataset has more than 10,000 rows."},
+      {"role": "assistant", "content": "Thank you for those details. The issue with large datasets is actually related to a memory allocation bug in 3.2.1. Here are some solutions: (1) Update to version 3.2.2 which fixes this bug, (2) As a workaround, you can export in batches of 5,000 rows, (3) Try increasing the app's memory allocation in Settings > Performance > Memory Limit."},
+      {"role": "user", "content": "I can't update to 3.2.2 because my company's IT policy requires us to stay on approved versions, and 3.2.2 isn't approved yet. The batch workaround won't work because I need the full dataset with proper headers."},
+      {"role": "assistant", "content": "I understand the constraints. For your situation, try increasing the memory allocation (option 3). If that doesn't work, there's another workaround: export to JSON first, then use our command-line tool to convert JSON to CSV which handles large datasets better. The command is: `datatool convert --input data.json --output data.csv --format csv`. Let me know if that works for you."}
+    ],
+    "quality_scores": {
+      "coherence": 7,
+      "helpfulness": 6,
+      "empathy": 4,
+      "resolution": 5,
+      "escalation_handling": 3
+    },
+    "notes": "Mediocre support - gives generic 'restart' advice first, doesn't acknowledge the IT constraint frustration, and the final workaround adds complexity. Should have offered to file a bug report or provide a hotfix for the approved version."
+  },
+  {
+    "id": 3,
+    "scenario": "Educational tutor - math help",
+    "conversation": [
+      {"role": "user", "content": "I don't understand how to solve quadratic equations. Can you help?"},
+      {"role": "assistant", "content": "Of course! A quadratic equation has the form ax² + bx + c = 0. The main methods to solve them are: factoring, completing the square, and the quadratic formula. Let's start with the simplest method - factoring. Consider: x² + 5x + 6 = 0. Can you think of two numbers that multiply to 6 and add to 5?"},
+      {"role": "user", "content": "Um... 2 and 3?"},
+      {"role": "assistant", "content": "Exactly right! 2 × 3 = 6 and 2 + 3 = 5. So we can write: (x + 2)(x + 3) = 0. Now, if a product equals zero, at least one factor must be zero. So either x + 2 = 0 (giving x = -2) or x + 3 = 0 (giving x = -3). Let's try a slightly harder one: x² - 7x + 12 = 0. What two numbers multiply to 12 and add to -7?"},
+      {"role": "user", "content": "I'm confused about the negative. Would it be -3 and -4? Because -3 times -4 is 12 and -3 plus -4 is -7?"},
+      {"role": "assistant", "content": "That's excellent reasoning! You handled the signs perfectly. So x² - 7x + 12 = (x - 3)(x - 4) = 0, giving us x = 3 or x = 4. Now, not all quadratics factor neatly. For those, we use the quadratic formula: x = (-b ± √(b² - 4ac)) / (2a). Want to try one with the formula?"}
+    ],
+    "quality_scores": {
+      "coherence": 10,
+      "helpfulness": 9,
+      "empathy": 8,
+      "resolution": 8,
+      "escalation_handling": 9
+    },
+    "notes": "Excellent tutoring - scaffolds learning progressively, encourages student to think, provides positive reinforcement, transitions smoothly between difficulty levels"
+  }
+]

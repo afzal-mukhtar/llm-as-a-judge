@@ -1,0 +1,87 @@
+[
+    {
+        "id": "score_001",
+        "question": "Explain how photosynthesis works.",
+        "answer": "Plants use sunlight to make food. Chlorophyll in leaves absorbs light and converts carbon dioxide and water into glucose and oxygen.",
+        "why_scoring_problematic": "What does 'completeness' mean? Complete for a 5th grader vs PhD student? Complete means mentioning light/dark reactions? Calvin cycle? Molecular details? No criteria provided.",
+        "scoring_criteria_missing": [
+            "Target audience level (elementary vs advanced)",
+            "Required depth (overview vs detailed mechanisms)", 
+            "Specific components to include (chloroplasts, ATP, NADPH)",
+            "Length expectations",
+            "Scientific accuracy requirements"
+        ],
+        "likely_llm_score": "6-7 out of 10 (arbitrary scoring without clear criteria)",
+        "what_answer_lacks": "Details about light reactions, Calvin cycle, specific cellular structures, energy conversion process",
+        "teaching_point": "Without clear criteria, LLM will give arbitrary scores that seem objective but are meaningless.",
+        "better_approach_preview": "Define completeness criteria first, then ask for specific missing elements rather than numeric score"
+    },
+    {
+        "id": "score_002",
+        "question": "What are the causes of World War I?",
+        "answer": "World War I was caused by the assassination of Archduke Franz Ferdinand in 1914, which triggered a chain of alliances that led to war.",
+        "why_scoring_problematic": "Completeness depends on historical scope expected. Should it cover militarism, alliances, imperialism, nationalism? Economic factors? Long-term vs immediate causes?",
+        "scoring_criteria_missing": [
+            "Scope: immediate vs underlying causes",
+            "Geographic focus: European vs global factors",
+            "Factor types: political, economic, social, military",
+            "Historical debate acknowledgment",
+            "Evidence/source requirements"
+        ],
+        "likely_llm_score": "4-5 out of 10 (recognizing it's incomplete but no clear standard)",
+        "what_answer_lacks": "MAIN factors (Militarism, Alliances, Imperialism, Nationalism), long-term causes, complex causation",
+        "teaching_point": "Historical questions have multiple valid approaches and levels of analysis. Scoring without context is meaningless.",
+        "better_approach_preview": "Specify required analytical framework and depth before evaluation"
+    },
+    {
+        "id": "score_003",
+        "question": "How do you solve a quadratic equation?",
+        "answer": "To solve a quadratic equation, you can use the quadratic formula: x = (-b ± √(b² - 4ac)) / 2a where the equation is ax² + bx + c = 0.",
+        "why_scoring_problematic": "Is this complete? Should it include factoring methods? Completing the square? Graphical interpretation? Example? When to use which method?",
+        "scoring_criteria_missing": [
+            "Method coverage: formula only vs multiple methods",
+            "Example requirement: abstract vs concrete demonstration", 
+            "Explanation depth: formula only vs conceptual understanding",
+            "Practical application: when to use which method",
+            "Error handling: what if discriminant is negative"
+        ],
+        "likely_llm_score": "7-8 out of 10 (formula is correct but might dock for lack of example)",
+        "what_answer_lacks": "Alternative methods (factoring, completing square), worked example, method selection guidance",
+        "teaching_point": "Mathematical explanations can be complete at different levels. Scoring depends heavily on intended use case.",
+        "better_approach_preview": "Define learning objectives and required demonstration level before scoring"
+    },
+    {
+        "id": "score_004",
+        "question": "What is machine learning?",
+        "answer": "Machine learning is when computers learn patterns from data without being explicitly programmed for each task. It uses algorithms to find patterns and make predictions.",
+        "why_scoring_problematic": "Complete for whom? A business executive vs computer science student vs general public? Should it include types of ML? Examples? Technical details?",
+        "scoring_criteria_missing": [
+            "Audience expertise level",
+            "Technical depth required (algorithms, math, concepts only)",
+            "Breadth: types of ML, applications, limitations",
+            "Examples: concrete vs abstract",
+            "Context: business value vs technical implementation"
+        ],
+        "likely_llm_score": "6-7 out of 10 (solid basic explanation but could be more complete)",
+        "what_answer_lacks": "Types of ML (supervised/unsupervised/reinforcement), concrete examples, limitations",
+        "teaching_point": "Technical explanations serve different purposes. Completeness is meaningless without knowing the intended audience and use.",
+        "better_approach_preview": "Specify audience and purpose first, then evaluate against those specific needs"
+    },
+    {
+        "id": "score_005",
+        "question": "Why is exercise important for health?",
+        "answer": "Exercise is important because it strengthens your heart, helps control weight, and makes you feel better mentally.",
+        "why_scoring_problematic": "Complete in what sense? Should it cover specific health benefits? Mechanisms? Recommended amounts? Different types of exercise? Scientific evidence?",
+        "scoring_criteria_missing": [
+            "Health benefit scope: physical, mental, disease prevention",
+            "Evidence level: general claims vs scientific backing",
+            "Practical guidance: types, frequency, duration",
+            "Individual considerations: age, health conditions",
+            "Mechanism explanation: how exercise creates these benefits"
+        ],
+        "likely_llm_score": "5-6 out of 10 (true but basic, missing important details)",
+        "what_answer_lacks": "Specific benefits (bone density, immune function, disease prevention), recommendations, mechanisms",
+        "teaching_point": "Health information can be accurate but incomplete in many different ways. Scoring requires clear criteria about required comprehensiveness.",
+        "better_approach_preview": "Define required health topics and detail level before evaluating completeness"
+    }
+]

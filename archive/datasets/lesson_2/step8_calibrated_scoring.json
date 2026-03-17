@@ -1,0 +1,82 @@
+[
+    {
+        "id": "calib_001",
+        "question": "What causes economic recessions?",
+        "candidate_answer": "Economic recessions are caused by a combination of factors including reduced consumer spending, high interest rates, stock market crashes, and loss of confidence in the economy. When people stop spending, businesses cut jobs, which leads to even less spending in a downward spiral.",
+        "uncalibrated_problem": "Without clear rubric, might get anywhere from 5-9/10 depending on evaluator's economics background",
+        "calibrated_rubric": {
+            "1": "Completely wrong - major factual errors about economics",
+            "3": "Partially correct but oversimplified - mentions some factors but misses key mechanisms", 
+            "5": "Generally accurate but lacks depth - correct but introductory-level explanation",
+            "7": "Good explanation with multiple factors and relationships identified",
+            "9": "Comprehensive analysis showing deep understanding of economic theory and historical patterns"
+        },
+        "why_challenging": "Reasonable explanation but could be elementary or sophisticated depending on standards",
+        "expected_uncalibrated_scores": "Range from 5/10 (too simple) to 8/10 (covers main points)",
+        "expected_calibrated_score": "5/10 - generally accurate but introductory-level explanation lacking economic depth"
+    },
+    {
+        "id": "calib_002",
+        "question": "How do vaccines help prevent disease outbreaks?",
+        "candidate_answer": "Vaccines work by training your immune system to recognize and fight specific diseases before you get sick. When enough people in a community are vaccinated, it creates herd immunity that protects everyone, including those who can't be vaccinated due to medical conditions.",
+        "uncalibrated_problem": "Medical accuracy might get high scores, but depth of explanation could vary widely in evaluation",
+        "calibrated_rubric": {
+            "1": "Medically dangerous misinformation or completely incorrect",
+            "3": "Basic accuracy but missing important details or mechanisms",
+            "5": "Correct general explanation suitable for public understanding", 
+            "7": "Accurate with good detail about immune response and population effects",
+            "9": "Expert-level explanation with immunological detail and epidemiological precision"
+        },
+        "why_challenging": "Correct and clear but could be seen as basic or appropriately accessible depending on standards",
+        "expected_uncalibrated_scores": "Range from 6/10 (too basic) to 9/10 (clear and accurate)",
+        "expected_calibrated_score": "5/10 - correct general explanation suitable for public understanding"
+    },
+    {
+        "id": "calib_003",
+        "question": "What are the main causes of the American Civil War?",
+        "candidate_answer": "The American Civil War was primarily caused by disagreements over slavery. The Northern states wanted to abolish slavery while the Southern states depended on it for their agricultural economy. States' rights and economic differences were also important factors, but slavery was at the center of the conflict.",
+        "uncalibrated_problem": "Historical accuracy vs historiographical sophistication could lead to very different scores",
+        "calibrated_rubric": {
+            "1": "Historically inaccurate or promotes harmful misconceptions",
+            "3": "Some accurate facts but oversimplified or missing key perspectives",
+            "5": "Generally accurate summary appropriate for general audiences",
+            "7": "Good historical analysis showing understanding of multiple causes and perspectives", 
+            "9": "Sophisticated historiographical understanding with nuanced analysis of causation and interpretation"
+        },
+        "why_challenging": "Historically accurate but could be seen as oversimplified by historians or comprehensive by general audiences",
+        "expected_uncalibrated_scores": "Range from 4/10 (oversimplified) to 8/10 (hits main points accurately)",
+        "expected_calibrated_score": "5/10 - generally accurate summary appropriate for general audiences"
+    },
+    {
+        "id": "calib_004",
+        "question": "How does machine learning work?",
+        "candidate_answer": "Machine learning uses algorithms that can learn patterns from data without being explicitly programmed for each task. You feed the computer lots of training data, and it finds patterns that help it make predictions on new, unseen data. There are different types like supervised learning (with labeled examples) and unsupervised learning (finding hidden patterns).",
+        "uncalibrated_problem": "Technical accuracy vs accessibility vs completeness could yield very different evaluations",
+        "calibrated_rubric": {
+            "1": "Technically incorrect or misleading about how ML works",
+            "3": "Basic accuracy but significant gaps or oversimplifications",
+            "5": "Correct general explanation accessible to non-experts",
+            "7": "Good technical explanation with key concepts and distinctions",
+            "9": "Expert-level explanation with mathematical/algorithmic detail and nuanced understanding"
+        },
+        "why_challenging": "Technically correct and accessible, but depth could be questioned by experts or praised by beginners",
+        "expected_uncalibrated_scores": "Range from 5/10 (too simple for experts) to 9/10 (clear and informative)",
+        "expected_calibrated_score": "5/10 - correct general explanation accessible to non-experts"
+    },
+    {
+        "id": "calib_005",
+        "question": "What are the benefits and risks of social media?",
+        "candidate_answer": "Social media benefits include staying connected with friends and family, accessing news and information quickly, and building communities around shared interests. Risks include privacy concerns, mental health impacts from comparison and cyberbullying, and the spread of misinformation. The overall impact depends on how you use these platforms.",
+        "uncalibrated_problem": "Balanced coverage might seem comprehensive or superficial depending on evaluation standards",
+        "calibrated_rubric": {
+            "1": "Completely one-sided or factually wrong about social media effects",
+            "3": "Mentions both sides but lacks depth or misses major issues",
+            "5": "Balanced overview covering main benefits and risks appropriately",
+            "7": "Thoughtful analysis with specific examples and nuanced understanding",
+            "9": "Expert-level analysis with research citations and sophisticated understanding of complex effects"
+        },
+        "why_challenging": "Covers main points in balanced way but could be seen as generic or appropriately comprehensive",
+        "expected_uncalibrated_scores": "Range from 4/10 (too generic) to 8/10 (balanced and comprehensive)",
+        "expected_calibrated_score": "5/10 - balanced overview covering main benefits and risks appropriately"
+    }
+]

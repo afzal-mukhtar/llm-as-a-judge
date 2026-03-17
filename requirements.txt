@@ -1,0 +1,10 @@
+# LLM provider (unified API for 100+ providers)
+litellm>=1.0.0
+
+# Data & computation
+numpy>=1.24.0
+scipy>=1.10.0
+pandas>=2.0.0
+
+# Notebook
+jupyter>=1.0.0

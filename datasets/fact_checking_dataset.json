@@ -1,0 +1,137 @@
+[
+    {
+        "id": "fact_001",
+        "type": "binary_fact_check",
+        "claim": "Paris is the capital of France",
+        "ground_truth": "true",
+        "evidence": "Paris has been the capital of France since the 12th century and is the seat of the French government.",
+        "difficulty": "easy",
+        "category": "geography"
+    },
+    {
+        "id": "fact_002", 
+        "type": "binary_fact_check",
+        "claim": "The Great Wall of China is visible from space with the naked eye",
+        "ground_truth": "false",
+        "evidence": "NASA has confirmed that the Great Wall of China is not visible from space with the naked eye. This is a common myth.",
+        "difficulty": "medium",
+        "category": "science"
+    },
+    {
+        "id": "fact_003",
+        "type": "binary_fact_check", 
+        "claim": "Water boils at 100 degrees Celsius at sea level",
+        "ground_truth": "true",
+        "evidence": "At standard atmospheric pressure (1 atmosphere), water boils at exactly 100°C (212°F).",
+        "difficulty": "easy",
+        "category": "science"
+    },
+    {
+        "id": "fact_004",
+        "type": "binary_fact_check",
+        "claim": "Shakespeare wrote 37 plays",
+        "ground_truth": "true", 
+        "evidence": "William Shakespeare is credited with writing 37 plays, though some scholars debate the exact number.",
+        "difficulty": "medium",
+        "category": "literature"
+    },
+    {
+        "id": "fact_005",
+        "type": "binary_fact_check",
+        "claim": "The human brain uses 50% of the body's energy",
+        "ground_truth": "false",
+        "evidence": "The human brain uses approximately 20% of the body's total energy, not 50%. This is a common misconception.",
+        "difficulty": "medium", 
+        "category": "science"
+    },
+    {
+        "id": "fact_006",
+        "type": "binary_fact_check",
+        "claim": "Mount Everest is the tallest mountain on Earth",
+        "ground_truth": "true",
+        "evidence": "Mount Everest stands at 8,848.86 meters (29,031.7 feet) above sea level, making it the tallest mountain on Earth.",
+        "difficulty": "easy",
+        "category": "geography"
+    },
+    {
+        "id": "fact_007",
+        "type": "binary_fact_check",
+        "claim": "Goldfish have a 3-second memory",
+        "ground_truth": "false", 
+        "evidence": "Scientific studies have shown goldfish can remember things for months, not just 3 seconds. This is a persistent myth.",
+        "difficulty": "medium",
+        "category": "science"
+    },
+    {
+        "id": "fact_008",
+        "type": "binary_fact_check",
+        "claim": "The Declaration of Independence was signed in 1776",
+        "ground_truth": "true",
+        "evidence": "The Declaration of Independence was approved by the Continental Congress on July 4, 1776.",
+        "difficulty": "easy", 
+        "category": "history"
+    },
+    {
+        "id": "fact_009",
+        "type": "binary_fact_check",
+        "claim": "Bananas are berries, but strawberries are not",
+        "ground_truth": "true",
+        "evidence": "Botanically speaking, bananas are classified as berries because they develop from a single flower with one ovary. Strawberries are not true berries.",
+        "difficulty": "hard",
+        "category": "science"
+    },
+    {
+        "id": "fact_010",
+        "type": "binary_fact_check", 
+        "claim": "Lightning never strikes the same place twice",
+        "ground_truth": "false",
+        "evidence": "Lightning frequently strikes the same place multiple times. Tall buildings and structures are hit repeatedly.",
+        "difficulty": "medium",
+        "category": "science"
+    },
+    {
+        "id": "fact_011",
+        "type": "binary_fact_check",
+        "claim": "The Amazon rainforest produces 20% of the world's oxygen",
+        "ground_truth": "true",
+        "evidence": "The Amazon rainforest is often called the 'lungs of the Earth' and produces approximately 20% of the world's oxygen.",
+        "difficulty": "medium",
+        "category": "science"
+    },
+    {
+        "id": "fact_012",
+        "type": "binary_fact_check",
+        "claim": "Penguins live at the North Pole",
+        "ground_truth": "false",
+        "evidence": "Penguins live in the Southern Hemisphere, primarily in Antarctica. Polar bears live at the North Pole.",
+        "difficulty": "easy",
+        "category": "geography"
+    },
+    {
+        "id": "fact_013",
+        "type": "binary_fact_check",
+        "claim": "The first iPhone was released in 2007",
+        "ground_truth": "true",
+        "evidence": "Apple released the first iPhone on June 29, 2007, revolutionizing the smartphone industry.",
+        "difficulty": "easy",
+        "category": "technology"
+    },
+    {
+        "id": "fact_014",
+        "type": "binary_fact_check",
+        "claim": "Vaccines cause autism",
+        "ground_truth": "false", 
+        "evidence": "Extensive scientific research has conclusively shown no link between vaccines and autism. This claim has been thoroughly debunked.",
+        "difficulty": "medium",
+        "category": "science"
+    },
+    {
+        "id": "fact_015",
+        "type": "binary_fact_check",
+        "claim": "There are more possible games of chess than atoms in the observable universe",
+        "ground_truth": "true",
+        "evidence": "The number of possible chess games (Shannon number) is estimated at 10^120, while there are approximately 10^80 atoms in the observable universe.",
+        "difficulty": "hard", 
+        "category": "mathematics"
+    }
+]

@@ -1,0 +1,77 @@
+[
+    {
+        "id": "decomp_001",
+        "question": "What are the benefits of renewable energy?",
+        "candidate_answer": "Renewable energy is great for the environment because it doesn't produce carbon emissions like fossil fuels do. It's also unlimited since wind and solar will always be available. Plus, it's getting cheaper every year.",
+        "single_score_problem": "Overall judgment might say 'Good answer' but miss specific issues with accuracy and completeness",
+        "decomposed_criteria": {
+            "addresses_main_question": "Does it directly answer what was asked? (0/1)",
+            "factual_accuracy": "Are the stated facts correct? (0-3)",
+            "evidence_provided": "Does it include supporting details or examples? (0-2)",
+            "acknowledges_limitations": "Does it mention any drawbacks or nuances? (0-2)"
+        },
+        "why_challenging": "Sounds good overall but has factual issues (renewables DO have emissions in manufacturing), overstates reliability ('always available'), ignores intermittency problems",
+        "expected_single_score": "7/10 or 'Good' - sounds environmentally positive",
+        "expected_decomposed": "Addresses: 1/1, Accuracy: 1/3, Evidence: 1/2, Limitations: 0/2 = 3/8 total"
+    },
+    {
+        "id": "decomp_002",
+        "question": "How does compound interest work?",
+        "candidate_answer": "Compound interest is when your money grows exponentially over time. Unlike simple interest which only calculates on the principal, compound interest calculates on both principal and accumulated interest. This means your investment doubles much faster - in fact, Einstein called it the eighth wonder of the world!",
+        "single_score_problem": "Sounds impressive and motivational, might get high overall score despite missing practical details",
+        "decomposed_criteria": {
+            "concept_explanation": "Does it explain the core mechanism correctly? (0-3)",
+            "mathematical_accuracy": "Are mathematical claims accurate? (0-3)",
+            "practical_information": "Does it provide useful actionable information? (0-2)",
+            "source_accuracy": "Are any quotes or attributions correct? (0-2)"
+        },
+        "why_challenging": "Good concept explanation but 'doubles much faster' is vague, 'exponentially' is technically wrong (it's exponential only if compounding is continuous), Einstein quote is disputed/probably false",
+        "expected_single_score": "8/10 - sounds knowledgeable and inspiring",
+        "expected_decomposed": "Concept: 2/3, Mathematical: 1/3, Practical: 0/2, Source: 0/2 = 3/10 total"
+    },
+    {
+        "id": "decomp_003", 
+        "question": "What causes earthquakes?",
+        "candidate_answer": "Earthquakes happen when tectonic plates move and create pressure along fault lines. When this pressure builds up too much, the rocks suddenly slip and release energy as seismic waves. The San Andreas Fault in California is a famous example where the Pacific and North American plates meet.",
+        "single_score_problem": "Scientifically sounds correct, might get high score without checking depth of understanding",
+        "decomposed_criteria": {
+            "scientific_mechanism": "Does it correctly explain the physical process? (0-3)",
+            "specific_examples": "Does it provide relevant examples? (0-2)",
+            "completeness": "Does it cover different types of earthquakes? (0-2)",
+            "precision": "Are technical terms used accurately? (0-3)"
+        },
+        "why_challenging": "Good basic explanation but doesn't mention different fault types (strike-slip, normal, reverse), volcanic earthquakes, induced seismicity, or depth variations",
+        "expected_single_score": "8/10 - sounds scientifically accurate",
+        "expected_decomposed": "Mechanism: 2/3, Examples: 2/2, Completeness: 1/2, Precision: 2/3 = 7/10 total"
+    },
+    {
+        "id": "decomp_004",
+        "question": "What is the difference between RAM and storage in computers?",
+        "candidate_answer": "RAM is temporary memory that your computer uses when running programs, while storage is permanent memory where files are saved. RAM is much faster but everything in RAM disappears when you turn off the computer. Storage keeps your data even when the computer is off. Think of RAM like your desk workspace and storage like your filing cabinet.",
+        "single_score_problem": "Clear analogy and good explanation structure might mask technical imprecision",
+        "decomposed_criteria": {
+            "core_distinction": "Does it explain the fundamental difference? (0-3)",
+            "technical_accuracy": "Are technical details correct? (0-3)",
+            "helpful_analogies": "Does it use effective explanations for non-experts? (0-2)",
+            "practical_relevance": "Does it help someone understand why this matters? (0-2)"
+        },
+        "why_challenging": "Good basic explanation but 'permanent memory' is imprecise (storage can fail), doesn't mention types (SSD vs HDD), RAM volatility explanation is oversimplified",
+        "expected_single_score": "9/10 - clear, helpful explanation with good analogy",
+        "expected_decomposed": "Distinction: 3/3, Accuracy: 2/3, Analogies: 2/2, Relevance: 1/2 = 8/10 total"
+    },
+    {
+        "id": "decomp_005",
+        "question": "Why is sleep important for health?",
+        "candidate_answer": "Sleep is crucial because it allows your brain to rest and repair itself. During sleep, your body produces growth hormones and your immune system gets stronger. Studies show that people who don't get enough sleep have higher rates of obesity, diabetes, and heart disease. Most adults need 7-9 hours per night for optimal health.",
+        "single_score_problem": "Sounds medically authoritative and well-researched, might get high score without checking specifics",
+        "decomposed_criteria": {
+            "biological_mechanisms": "Does it explain how sleep actually helps? (0-3)",
+            "health_consequences": "Does it accurately describe sleep deprivation effects? (0-3)",
+            "practical_guidance": "Does it provide actionable information? (0-2)",
+            "scientific_grounding": "Does it reference research appropriately? (0-2)"
+        },
+        "why_challenging": "Good general claims but oversimplifies brain 'repair', growth hormone production is more complex, correlations vs causation issues with disease studies",
+        "expected_single_score": "9/10 - comprehensive, research-backed answer",
+        "expected_decomposed": "Mechanisms: 1/3, Consequences: 2/3, Guidance: 2/2, Scientific: 1/2 = 6/10 total"
+    }
+]

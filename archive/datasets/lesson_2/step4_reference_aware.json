@@ -1,0 +1,57 @@
+[
+    {
+        "id": "ref_001",
+        "question": "What was the primary cause of World War I?",
+        "candidate_answer": "The assassination of Archduke Franz Ferdinand of Austria-Hungary by a Serbian nationalist in Sarajevo was the primary cause of World War I. This event triggered a chain reaction of alliances that led to the global conflict.",
+        "reference_answer": "While the assassination of Archduke Franz Ferdinand was the immediate trigger, historians generally agree that the primary causes were deeper: the alliance system, militarism, imperialism, and nationalism. The assassination was the spark, but the powder keg was already prepared by these underlying tensions.",
+        "internal_knowledge_bias": "LLM's training data may favor the 'assassination triggered WWI' narrative because it's commonly taught in schools",
+        "reference_reveals": "The candidate conflates immediate trigger with underlying causes - a common historical misconception",
+        "why_challenging": "Candidate answer sounds authoritative and is partially correct, but reflects oversimplified causation",
+        "expected_without_reference": "8/10 - historically accurate and well-explained",
+        "expected_with_reference": "4/10 - misses the distinction between immediate triggers and deeper causes that historians emphasize"
+    },
+    {
+        "id": "ref_002",
+        "question": "How do antidepressants work in the brain?",
+        "candidate_answer": "Antidepressants work by correcting a chemical imbalance in the brain, specifically by increasing levels of serotonin, dopamine, and norepinephrine. These neurotransmitters regulate mood, so when they're low, people get depressed. Antidepressants help restore normal levels.",
+        "reference_answer": "The mechanism of antidepressants is not fully understood. While they do affect neurotransmitter levels (serotonin, norepinephrine, etc.), the 'chemical imbalance' theory is oversimplified. Current research suggests they may work through neuroplasticity, by promoting new neural connections and reducing inflammation. The relationship between neurotransmitter levels and depression is more complex than a simple deficiency model.",
+        "internal_knowledge_bias": "LLM training data includes many outdated medical explanations that present the chemical imbalance theory as established fact",
+        "reference_reveals": "Candidate answer repeats outdated 'chemical imbalance' theory that's been largely discredited",
+        "why_challenging": "Medical-sounding explanation that matches what many people have heard from doctors",
+        "expected_without_reference": "9/10 - clear, scientific explanation",
+        "expected_with_reference": "3/10 - perpetuates oversimplified and potentially harmful medical misconception"
+    },
+    {
+        "id": "ref_003",
+        "question": "What is the best programming language for web development?",
+        "candidate_answer": "JavaScript is the best programming language for web development because it's the only language that runs natively in browsers. You can use it for both frontend and backend development with Node.js, making it a versatile full-stack solution. It has a huge ecosystem and community support.",
+        "reference_answer": "'Best' depends entirely on project requirements, team expertise, and constraints. JavaScript is necessary for client-side interactivity, but backend options include Python (Django/Flask), Ruby (Rails), PHP, Java, C#, Go, Rust, and others. Each has trade-offs in performance, developer experience, ecosystem, and suitability for different use cases. Modern web development often involves multiple languages.",
+        "internal_knowledge_bias": "LLM may reflect JavaScript-centric perspective common in web development communities",
+        "reference_reveals": "Candidate answer treats a contextual choice as an absolute recommendation",
+        "why_challenging": "Technically accurate points about JavaScript but frames subjective choice as objective fact",
+        "expected_without_reference": "7/10 - technically accurate with good practical reasoning",
+        "expected_with_reference": "4/10 - fails to acknowledge that 'best' is context-dependent"
+    },
+    {
+        "id": "ref_004",
+        "question": "Why do most startups fail?",
+        "candidate_answer": "Most startups fail because they build products that nobody wants. They focus too much on their technology or solution without validating market demand first. Other common reasons include running out of money, having the wrong team, and poor timing for the market.",
+        "reference_answer": "Startup failure causes are complex and data varies by study methodology. CB Insights analysis shows top reasons include: no market need (42%), cash shortage (29%), wrong team (23%), competition (19%), pricing issues (18%), user-unfriendly products (17%), no business model (17%), poor marketing (14%), timing (13%), and pivot issues (10%). However, these factors often interact, and survivorship bias affects our understanding of what causes success vs failure.",
+        "internal_knowledge_bias": "LLM may reflect popular startup advice rather than empirical research on failure rates",
+        "reference_reveals": "Candidate answer reflects conventional wisdom but lacks nuance and data",
+        "why_challenging": "'No market demand' is indeed commonly cited, making the answer seem credible",
+        "expected_without_reference": "8/10 - matches conventional startup wisdom",
+        "expected_with_reference": "5/10 - oversimplifies complex, multi-causal phenomenon"
+    },
+    {
+        "id": "ref_005",
+        "question": "What is the relationship between IQ and life success?",
+        "candidate_answer": "IQ is a strong predictor of life success, including educational achievement, income, and job performance. People with higher IQs tend to earn more money, achieve higher levels of education, and perform better in cognitively demanding careers. While other factors like emotional intelligence and social skills matter, IQ remains one of the most important predictors.",
+        "reference_answer": "The relationship between IQ and life outcomes is significant but complex. IQ correlates with academic performance (r≈0.5) and job performance (r≈0.3-0.5), but correlations with income are more modest (r≈0.2-0.3). Socioeconomic status, educational opportunities, health, personality traits (especially conscientiousness), and social capital also strongly predict outcomes. IQ's predictive power varies by context and may be inflated by factors like test access, cultural bias, and the definition of 'success.' Critics note IQ tests may not capture many forms of intelligence relevant to real-world success.",
+        "internal_knowledge_bias": "LLM training may overrepresent pro-IQ perspectives from psychology literature while underrepresenting critiques",
+        "reference_reveals": "Candidate answer overstates IQ's predictive power and understates confounding factors",
+        "why_challenging": "There IS a correlation between IQ and various outcomes, making the answer seem evidence-based",
+        "expected_without_reference": "7/10 - cites real correlations and acknowledges other factors",
+        "expected_with_reference": "4/10 - overstates effect sizes and understates limitations of IQ research"
+    }
+]

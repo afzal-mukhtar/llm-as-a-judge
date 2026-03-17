@@ -1,0 +1,77 @@
+[
+    {
+        "id": "cot_001",
+        "question": "Is artificial intelligence dangerous to humanity?",
+        "candidate_answer": "AI poses significant risks including job displacement, privacy violations, and potential for misuse in surveillance. However, it also offers tremendous benefits like medical breakthroughs and climate solutions. The key is developing proper regulations and safety measures before the technology becomes too powerful to control.",
+        "direct_judgment_issue": "Complex topic where direct scoring might not reveal the reasoning behind the judgment",
+        "what_cot_reveals": "Forces evaluation of: 1) Are risks accurately characterized? 2) Are benefits realistically presented? 3) Is the balance reasonable? 4) Are proposed solutions viable?",
+        "why_challenging": "Balanced-sounding answer that seems reasonable but makes several assumptions - that regulation can keep pace with technology, that risks and benefits are comparable, that we can predict future AI capabilities",
+        "expected_direct_judgment": "7/10 or 'Good' - sounds balanced and thoughtful",
+        "expected_cot_issues_revealed": [
+            "Assumes regulatory solutions are feasible but doesn't address regulatory capture or technical complexity",
+            "Presents benefits and risks as easily balanced but they may be incommensurable",
+            "Doesn't address uncertainty about future AI capabilities",
+            "Uses vague terms like 'too powerful to control' without defining thresholds"
+        ]
+    },
+    {
+        "id": "cot_002",
+        "question": "What's the most effective way to reduce carbon emissions?",
+        "candidate_answer": "The most effective approach is a combination of transitioning to renewable energy, improving energy efficiency in buildings, and switching to electric vehicles. Nuclear power should also be part of the mix for reliable baseload power. Individual actions like reducing consumption and changing diet also matter, but systemic change is more important than individual behavior.",
+        "direct_judgment_issue": "Sounds comprehensive and evidence-based, direct judgment might miss analytical gaps",
+        "what_cot_reveals": "Forces examination of: 1) Are proposed solutions actually most effective? 2) Are trade-offs acknowledged? 3) Is the individual vs systemic framing accurate? 4) Are timescales realistic?",
+        "why_challenging": "Reasonable suggestions but doesn't prioritize by impact, ignores political feasibility, oversimplifies nuclear power debate, and the individual vs systemic framing is more complex than presented",
+        "expected_direct_judgment": "8/10 - comprehensive, multi-faceted approach",
+        "expected_cot_issues_revealed": [
+            "Doesn't prioritize solutions by carbon impact (e.g., industrial processes might be more important than EVs)",
+            "Nuclear power statement ignores waste, safety, and cost issues", 
+            "Individual vs systemic distinction is false dichotomy - individual actions can drive systemic change",
+            "No mention of carbon pricing, which many economists consider most effective"
+        ]
+    },
+    {
+        "id": "cot_003",
+        "question": "Why do people procrastinate and how can they overcome it?",
+        "candidate_answer": "People procrastinate because tasks feel overwhelming or unpleasant, and our brains naturally avoid discomfort. The key to overcoming procrastination is breaking large tasks into smaller, manageable pieces and using techniques like the Pomodoro Technique. Setting deadlines and removing distractions also helps. It's mainly about building better habits and self-discipline.",
+        "direct_judgment_issue": "Psychology explanation sounds reasonable, might get good score without deeper analysis",
+        "what_cot_reveals": "Forces evaluation of: 1) Is the psychological explanation accurate? 2) Are suggested solutions evidence-based? 3) Does it address different types of procrastination? 4) Is the 'self-discipline' framing helpful?",
+        "why_challenging": "Oversimplifies procrastination causes (anxiety, perfectionism, ADHD not mentioned), solutions work for some but not others, 'self-discipline' framing can be counterproductive and blame the individual",
+        "expected_direct_judgment": "7/10 - practical advice with psychological insight",
+        "expected_cot_issues_revealed": [
+            "Doesn't distinguish between different types of procrastination (fear-based vs executive function issues)",
+            "Solutions assume procrastination is just poor habit rather than symptom of anxiety/depression/ADHD",
+            "'Self-discipline' framing can increase shame and make procrastination worse",
+            "Pomodoro Technique isn't universally effective - some people need longer focus periods"
+        ]
+    },
+    {
+        "id": "cot_004", 
+        "question": "What causes income inequality and how can society address it?",
+        "candidate_answer": "Income inequality is caused by factors like differences in education, technological change that favors skilled workers, globalization, and declining union membership. To address it, society could invest in education and job training, strengthen social safety nets, and implement progressive taxation. Some economists also suggest universal basic income as a potential solution.",
+        "direct_judgment_issue": "Academic-sounding explanation covering multiple factors might seem comprehensive without scrutiny",
+        "what_cot_reveals": "Forces analysis of: 1) Are causes accurately identified? 2) Are proposed solutions matched to causes? 3) Are there missing perspectives? 4) Do solutions address root causes?",
+        "why_challenging": "Lists conventional explanations but misses capital vs labor dynamics, rent-seeking, market concentration, intergenerational wealth transfer - solutions are incremental rather than structural",
+        "expected_direct_judgment": "8/10 - multi-factor analysis with policy solutions",
+        "expected_cot_issues_revealed": [
+            "Focuses on human capital explanations but ignores wealth concentration and capital returns",
+            "Education framing assumes inequality is mainly about skills rather than power/ownership structures", 
+            "Doesn't mention monopoly power or market concentration issues",
+            "Progressive taxation mentioned but not wealth taxes or inheritance reform"
+        ]
+    },
+    {
+        "id": "cot_005",
+        "question": "Is social media good or bad for democracy?",
+        "candidate_answer": "Social media has both positive and negative effects on democracy. On the positive side, it gives more people a voice, helps organize political movements, and increases civic engagement. On the negative side, it spreads misinformation, creates echo chambers, and can be manipulated by foreign actors. The net effect depends on how platforms are regulated and how citizens use them.",
+        "direct_judgment_issue": "Balanced assessment might seem reasonable without examining the quality of the analysis",
+        "what_cot_reveals": "Forces examination of: 1) Are positive/negative effects accurately characterized? 2) Is the 'balance depends on regulation' conclusion justified? 3) Are there missing dimensions? 4) Is the causal reasoning sound?",
+        "why_challenging": "False balance framing - treats positive and negative effects as equivalent when they may not be, regulation solutions may be inadequate for algorithmic manipulation, doesn't address business model incentives",
+        "expected_direct_judgment": "7/10 - balanced, nuanced perspective",
+        "expected_cot_issues_revealed": [
+            "False equivalence between benefits and harms - scale and urgency may differ significantly",
+            "Regulation solution assumes platforms want to cooperate and regulators understand technology",
+            "Doesn't address how advertising-based business models incentivize engagement over truth",
+            "Echo chambers may be less important than algorithmic amplification of extreme content"
+        ]
+    }
+]

@@ -1,0 +1,83 @@
+{
+  "description": "Human expert baseline scores for eval_test_cases.json. 3 annotators, scores averaged. Used for benchmarking LLM judge accuracy.",
+  "scoring_rubric": {
+    "accuracy": "0-3: How factually correct is the answer? 0=wrong, 1=partially, 2=mostly, 3=fully",
+    "completeness": "0-3: How thoroughly does it cover the topic? 0=missing key info, 1=surface-level, 2=good coverage, 3=comprehensive",
+    "clarity": "0-3: How clear and well-structured? 0=confusing, 1=understandable, 2=clear, 3=excellent",
+    "overall": "0-9: Sum of accuracy + completeness + clarity"
+  },
+  "annotations": [
+    {
+      "case_id": 1,
+      "accuracy": 3, "completeness": 2, "clarity": 3, "overall": 8,
+      "verdict": "good",
+      "annotator_notes": "Correct and clear. Missing some detail (Seine River, population) but appropriate for the question scope."
+    },
+    {
+      "case_id": 2,
+      "accuracy": 2, "completeness": 0, "clarity": 2, "overall": 4,
+      "verdict": "poor",
+      "annotator_notes": "Not wrong but drastically oversimplified. Missing condensation, humidity, pressure systems, precipitation types."
+    },
+    {
+      "case_id": 3,
+      "accuracy": 3, "completeness": 3, "clarity": 3, "overall": 9,
+      "verdict": "good",
+      "annotator_notes": "Excellent answer with appropriate detail level. Covers both light-dependent and light-independent reactions."
+    },
+    {
+      "case_id": 4,
+      "accuracy": 2, "completeness": 1, "clarity": 2, "overall": 5,
+      "verdict": "poor",
+      "annotator_notes": "Partially correct but presents subjective opinion as universal fact. Ignores contraindications, dose-dependency, individual variation."
+    },
+    {
+      "case_id": 5,
+      "accuracy": 2, "completeness": 1, "clarity": 3, "overall": 6,
+      "verdict": "poor",
+      "annotator_notes": "Common but incomplete answer. Doesn't address the ambiguity in 'fastest' (land vs air vs water). Peregrine falcon is faster overall."
+    },
+    {
+      "case_id": 6,
+      "accuracy": 0, "completeness": 1, "clarity": 2, "overall": 3,
+      "verdict": "poor",
+      "annotator_notes": "Confidently wrong. Recommends microservices for a startup which contradicts best practices. Appeals to authority fallacy (Netflix/Google)."
+    },
+    {
+      "case_id": 7,
+      "accuracy": 1, "completeness": 0, "clarity": 2, "overall": 3,
+      "verdict": "poor",
+      "annotator_notes": "Dangerously incomplete. Only mentions chest pain. Misses arm/jaw/back pain, shortness of breath, nausea, and critically misses atypical symptoms in women."
+    },
+    {
+      "case_id": 8,
+      "accuracy": 3, "completeness": 2, "clarity": 3, "overall": 8,
+      "verdict": "good",
+      "annotator_notes": "Strong answer with accurate historical context and US constitutional reference. Could include modern applications and international perspective."
+    },
+    {
+      "case_id": 9,
+      "accuracy": 3, "completeness": 2, "clarity": 2, "overall": 7,
+      "verdict": "good",
+      "annotator_notes": "Correct high-level description. Misses positional encoding rationale, attention formula, and modern variants (BERT/GPT/T5 distinction)."
+    },
+    {
+      "case_id": 10,
+      "accuracy": 0, "completeness": 0, "clarity": 3, "overall": 3,
+      "verdict": "poor",
+      "annotator_notes": "Complete hallucination. No human population on Mars. Fabricated settlement names and dates. High clarity score because it's well-written nonsense."
+    },
+    {
+      "case_id": 11,
+      "accuracy": 2, "completeness": 2, "clarity": 2, "overall": 6,
+      "verdict": "poor",
+      "annotator_notes": "Mostly correct content but excessively verbose and padded. Lacks mention of overtraining risks, individual variation. Deducted for verbosity without proportional substance."
+    },
+    {
+      "case_id": 12,
+      "accuracy": 1, "completeness": 1, "clarity": 2, "overall": 4,
+      "verdict": "poor",
+      "annotator_notes": "Starts correct but introduces misleading hedging. 'Not fully understood' and 'ongoing debate about long-term effects' are anti-vax dog whistles. The mechanism IS well understood."
+    }
+  ]
+}

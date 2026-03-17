@@ -1,0 +1,77 @@
+[
+    {
+        "id": "subj_001",
+        "question": "What programming language should beginners learn first?",
+        "answer": "Python is an excellent choice for beginners because it has clean, readable syntax and a gentle learning curve. Most computer science courses and coding bootcamps start with Python.",
+        "why_problematic": "The question asks for 'should learn first' which seems factual but is actually subjective. Different beginners have different goals - web development, game programming, mobile apps, etc. The confident, authoritative tone makes it seem like established fact.",
+        "alternative_valid_answers": [
+            "JavaScript - immediate web development results",
+            "Scratch - visual programming for absolute beginners", 
+            "Java - teaches fundamental programming concepts",
+            "C - understanding how computers actually work"
+        ],
+        "teaching_point": "LLM likely says YES because answer sounds authoritative and mentions 'most courses' - mistaking common practice for universal truth.",
+        "naive_prompt_flaw": "Confident, research-backed language tricks LLM into thinking this is factual rather than contextual advice.",
+        "expected_llm_response": "YES - sounds authoritative and evidence-based"
+    },
+    {
+        "id": "subj_002", 
+        "question": "What makes a good leader in the workplace?",
+        "answer": "Good workplace leaders should have strong communication skills, be able to delegate effectively, and maintain team morale during challenging projects.",
+        "why_problematic": "Uses 'should have' language that seems prescriptive rather than 'best' or 'most important'. Leadership effectiveness varies enormously by industry, team maturity, company culture, and situation type.",
+        "alternative_valid_answers": [
+            "Technical expertise - in engineering teams",
+            "Emotional intelligence - in creative teams",
+            "Decision-making speed - in crisis situations",
+            "Strategic vision - in startup environments"
+        ],
+        "teaching_point": "LLM likely says YES because answer avoids superlatives and sounds like general wisdom rather than absolute claims.",
+        "naive_prompt_flaw": "Moderate, reasonable-sounding advice gets validated even when context-dependency is ignored.",
+        "expected_llm_response": "YES - sounds like reasonable general advice"
+    },
+    {
+        "id": "subj_003",
+        "question": "What is the healthiest diet for weight loss?",
+        "answer": "The Mediterranean diet is the healthiest approach for weight loss because it emphasizes whole foods, healthy fats, and has been scientifically proven to reduce cardiovascular disease risk.",
+        "why_problematic": "Claims to be 'the healthiest' and 'scientifically proven' but weight loss effectiveness depends on individual metabolism, food preferences, cultural background, and medical conditions. The scientific tone makes it seem objective.",
+        "alternative_valid_answers": [
+            "Plant-based diet - for environmental and ethical reasons",
+            "Ketogenic diet - for rapid initial weight loss",
+            "Intermittent fasting - for insulin sensitivity",
+            "Personalized nutrition - based on genetic testing"
+        ],
+        "teaching_point": "LLM likely says YES due to 'scientifically proven' language, mistaking research evidence for universal applicability.",
+        "naive_prompt_flaw": "Scientific references make subjective dietary advice seem like objective medical fact.",
+        "expected_llm_response": "YES - sounds scientific and evidence-based"
+    },
+    {
+        "id": "subj_004",
+        "question": "Which travel destination offers the best value for money?",
+        "answer": "Southeast Asia offers the best value for money because you can get good accommodation for $10-20 per night and meals for $2-5, while experiencing rich cultures and beautiful landscapes.",
+        "why_problematic": "Uses concrete price data that seems objective, but 'best value' depends on what you value - luxury vs budget, activities vs relaxation, familiar vs exotic, climate preferences, etc. The specific numbers make it seem factual.",
+        "alternative_valid_answers": [
+            "Eastern Europe - European culture at lower cost",
+            "Mexico - close to US with great food and beaches", 
+            "India - incredible diversity and lowest costs",
+            "Local destinations - no flight costs and support local economy"
+        ],
+        "teaching_point": "LLM likely says NO because 'best value' is clearly subjective and depends on personal preferences, despite the concrete pricing data.",
+        "naive_prompt_flaw": "Specific numbers can make subjective value judgments appear objective.",
+        "expected_llm_response": "NO - recognizes 'best value' as subjective despite concrete data"
+    },
+    {
+        "id": "subj_005",
+        "question": "What career path has the most job security?",
+        "answer": "Healthcare careers offer the most job security because people will always need medical care, and the aging population is increasing demand for healthcare services.",
+        "why_problematic": "Asks for 'most job security' which seems measurable but depends on economic conditions, automation trends, geographical location, and individual career goals. The demographic argument sounds logical and fact-based.",
+        "alternative_valid_answers": [
+            "Technology careers - digital transformation is essential",
+            "Education - always need teachers and trainers",
+            "Government jobs - stable employment with benefits",
+            "Trades - plumbing, electrical work can't be outsourced"
+        ],
+        "teaching_point": "LLM likely says NO because it recognizes job security varies by location, economic conditions, and technological changes, despite the logical-sounding demographic argument.",
+        "naive_prompt_flaw": "Demographic trends make career advice seem predictive and factual rather than speculative and contextual.",
+        "expected_llm_response": "NO - recognizes job security as complex and context-dependent"
+    }
+]

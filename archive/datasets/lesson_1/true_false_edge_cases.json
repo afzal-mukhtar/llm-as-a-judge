@@ -1,0 +1,57 @@
+[
+    {
+        "id": "tf_001",
+        "statement": "Regular exercise improves mental health.",
+        "context": "Multiple studies show exercise releases endorphins and reduces symptoms of depression and anxiety in most people.",
+        "why_problematic": "While generally supported by research, this ignores individual variation, severity of mental health conditions, and the fact that exercise alone isn't sufficient for serious mental health issues.",
+        "correct_nuanced_answer": "Generally true for mild to moderate cases, but varies by individual and shouldn't replace professional treatment for serious conditions",
+        "naive_llm_likely_says": "True - research backing makes it seem definitively factual",
+        "teaching_point": "LLM likely says TRUE because of research evidence, missing nuance about individual variation and limitations.",
+        "what_missing": "Individual variation, severity levels, limitations as sole treatment, contraindications",
+        "expected_llm_response": "TRUE - sounds well-established and research-backed"
+    },
+    {
+        "id": "tf_002",
+        "statement": "Bitcoin is a good long-term investment.",
+        "context": "Bitcoin has shown high volatility with both massive gains and losses. Future performance is uncertain and depends on regulation, adoption, and market conditions.",
+        "why_problematic": "This is a prediction about financial future with extreme uncertainty. 'Good' depends entirely on risk tolerance, investment timeline, and personal financial situation.",
+        "correct_nuanced_answer": "Impossible to determine - depends on unpredictable future events and individual financial circumstances",
+        "naive_llm_likely_says": "False - recognizes high uncertainty and speculative nature",
+        "teaching_point": "LLM likely says FALSE because investment advice is clearly speculative and context-dependent.",
+        "what_missing": "Individual risk tolerance, regulatory uncertainty, market unpredictability, definition of 'good investment'",
+        "expected_llm_response": "FALSE - recognizes investment speculation and uncertainty"
+    },
+    {
+        "id": "tf_003", 
+        "statement": "Reading books makes you smarter.",
+        "context": "Reading can improve vocabulary, critical thinking, and knowledge acquisition, but 'smarter' depends on what type of books and how information is processed.",
+        "why_problematic": "Defines neither 'smarter' nor what kinds of reading count. Comic books vs textbooks vs fiction all have different cognitive effects. Some people learn better through other modalities.",
+        "correct_nuanced_answer": "Depends on type of reading, individual learning style, and definition of 'smart'",
+        "naive_llm_likely_says": "True - sounds like common wisdom about education",
+        "teaching_point": "LLM likely says TRUE because it sounds like established educational wisdom, ignoring definitional and contextual complexity.",
+        "what_missing": "Definition of 'smarter', types of reading, individual learning differences, measurement criteria",
+        "expected_llm_response": "TRUE - sounds like common educational wisdom"
+    },
+    {
+        "id": "tf_004",
+        "statement": "Social media causes depression in teenagers.",
+        "context": "Some studies show correlation between social media use and depression, but causation is debated. Could be reverse causation, confounding variables, or complex bidirectional relationships.",
+        "why_problematic": "Claims direct causation ('causes') when research mostly shows correlation. Many confounding factors exist, and some teens benefit from social connections online.",
+        "correct_nuanced_answer": "Shows correlation but causation is complex and varies by individual usage patterns and personal factors",
+        "naive_llm_likely_says": "False - recognizes correlation vs causation issue",
+        "teaching_point": "LLM likely says FALSE because it can distinguish correlation from causation in research contexts.",
+        "what_missing": "Distinction between correlation and causation, individual variation, positive aspects of social connection",
+        "expected_llm_response": "FALSE - recognizes correlation vs causation problem"
+    },
+    {
+        "id": "tf_005",
+        "statement": "Drinking 8 glasses of water daily is necessary for good health.",
+        "context": "The '8 glasses' rule is widely repeated but isn't based on solid scientific evidence. Water needs vary greatly by body size, activity level, climate, and individual physiology.",
+        "why_problematic": "Presents a specific number ('8 glasses') that sounds precise and medical, but water needs are highly individual and the recommendation lacks strong scientific basis.",
+        "correct_nuanced_answer": "Water needs are highly individual - the '8 glasses' rule is not evidence-based",
+        "naive_llm_likely_says": "True - the specific number and health context make it sound like medical fact",
+        "teaching_point": "LLM likely says TRUE because specific numbers and health advice sound authoritative, despite lack of scientific basis.",
+        "what_missing": "Individual variation in water needs, lack of evidence for specific amount, activity and climate factors",
+        "expected_llm_response": "TRUE - specific number sounds like established medical advice"
+    }
+]

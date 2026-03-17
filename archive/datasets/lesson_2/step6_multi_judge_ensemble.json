@@ -1,0 +1,82 @@
+[
+    {
+        "id": "multi_001",
+        "question": "Is cryptocurrency a good investment for the average person?",
+        "candidate_answer": "Cryptocurrency can be a good investment if you understand the risks and only invest what you can afford to lose. It's highly volatile but has shown significant growth over the past decade. Consider it as a small part of a diversified portfolio, maybe 5-10% maximum.",
+        "single_judge_inconsistency": "Single runs might vary widely - sometimes focusing on growth potential, sometimes on volatility risks",
+        "ensemble_benefit": "Multiple judgments can reveal the inconsistency and average out biased responses",
+        "why_challenging": "Inherently uncertain topic where reasonable people disagree - perfect for showing judgment variance",
+        "expected_single_responses": [
+            "7/10 - reasonable risk management advice",
+            "4/10 - crypto is too speculative for average investors", 
+            "8/10 - acknowledges both risks and opportunities",
+            "3/10 - doesn't adequately warn about volatility",
+            "6/10 - generic investment advice"
+        ],
+        "expected_ensemble_result": "Average: 5.6/10 with high variance indicating disagreement about crypto investment advice"
+    },
+    {
+        "id": "multi_002",
+        "question": "Should parents limit their children's screen time?",
+        "candidate_answer": "Parents should set reasonable limits on screen time, focusing on quality over quantity. Educational content and video calls with family are different from mindless scrolling. The key is balance - ensuring kids also get physical activity, social interaction, and enough sleep.",
+        "single_judge_inconsistency": "Responses might vary based on whether judge focuses on health concerns, educational benefits, or practical parenting challenges",
+        "ensemble_benefit": "Multiple judgments reveal different perspectives and reduce bias toward any single viewpoint",
+        "why_challenging": "Complex parenting topic with legitimate concerns on multiple sides",
+        "expected_single_responses": [
+            "8/10 - balanced, practical advice for parents",
+            "5/10 - too vague about what 'reasonable limits' means",
+            "7/10 - good distinction between different types of screen use",
+            "6/10 - doesn't address addiction concerns adequately", 
+            "9/10 - comprehensive approach considering multiple factors"
+        ],
+        "expected_ensemble_result": "Average: 7/10 with moderate agreement on balanced approach"
+    },
+    {
+        "id": "multi_003",
+        "question": "Is artificial meat better for the environment than traditional meat?",
+        "candidate_answer": "Lab-grown meat has the potential to be much better for the environment because it requires less land, water, and energy than traditional livestock farming. It also eliminates methane emissions from cattle. However, current production is still energy-intensive and expensive.",
+        "single_judge_inconsistency": "Judgments might vary based on focus on current vs future environmental impact, or completeness of lifecycle analysis",
+        "ensemble_benefit": "Multiple evaluations can catch different aspects - current limitations vs future potential, missing factors, etc.",
+        "why_challenging": "Emerging technology with both promise and current limitations - complex environmental analysis",
+        "expected_single_responses": [
+            "8/10 - good analysis of environmental benefits and current limitations",
+            "6/10 - needs more specific data on resource use comparisons",
+            "7/10 - correctly identifies key environmental factors",
+            "5/10 - doesn't mention packaging, distribution, or scaling challenges",
+            "7/10 - balanced view of potential vs reality"
+        ],
+        "expected_ensemble_result": "Average: 6.6/10 with consensus that answer is decent but could be more comprehensive"
+    },
+    {
+        "id": "multi_004",
+        "question": "What's the most effective way to combat misinformation online?",
+        "candidate_answer": "The most effective approach combines platform responsibility, media literacy education, and fact-checking organizations. Social media companies should label disputed content, schools should teach critical thinking skills, and independent fact-checkers should verify claims quickly.",
+        "single_judge_inconsistency": "Different judges might prioritize different aspects - technical solutions, education, regulation, or individual responsibility",
+        "ensemble_benefit": "Multiple perspectives reveal whether the multi-pronged approach is convincing or too superficial",
+        "why_challenging": "Complex societal problem with no clear consensus on solutions",
+        "expected_single_responses": [
+            "7/10 - comprehensive multi-stakeholder approach",
+            "5/10 - too optimistic about platform cooperation and education effectiveness",
+            "8/10 - addresses key aspects of the misinformation ecosystem",
+            "6/10 - doesn't address economic incentives driving misinformation",
+            "7/10 - practical solutions but may be insufficient for scale of problem"
+        ],
+        "expected_ensemble_result": "Average: 6.6/10 with general agreement that approach is reasonable but may be insufficient"
+    },
+    {
+        "id": "multi_005",
+        "question": "Is working from home as productive as working in an office?",
+        "candidate_answer": "Research shows mixed results - some studies find remote workers are more productive due to fewer interruptions and flexible schedules, while others show productivity gains from in-person collaboration. It largely depends on the type of work, individual work styles, and company culture.",
+        "single_judge_inconsistency": "Judges might interpret 'productivity' differently (output vs collaboration vs innovation) and weigh research differently",
+        "ensemble_benefit": "Multiple judgments can reveal if the 'mixed results' framing is convincing or if there are missing nuances",
+        "why_challenging": "References research but doesn't cite specifics - tests whether judges consistently catch this limitation",
+        "expected_single_responses": [
+            "8/10 - acknowledges complexity and multiple factors",
+            "6/10 - claims research support but doesn't provide specifics",
+            "7/10 - realistic about individual and contextual variation",
+            "5/10 - 'mixed results' is too vague - what does research actually show?",
+            "7/10 - good framework for thinking about productivity factors"
+        ],
+        "expected_ensemble_result": "Average: 6.6/10 with moderate consensus but some concern about vagueness of research claims"
+    }
+]

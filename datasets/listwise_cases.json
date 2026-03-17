@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "question": "What is the greenhouse effect?",
+    "answers": [
+      {
+        "label": "A",
+        "text": "The greenhouse effect is when greenhouses trap heat from the sun to grow plants."
+      },
+      {
+        "label": "B",
+        "text": "The greenhouse effect is a natural process where certain gases in Earth's atmosphere trap heat from the sun, warming the planet's surface. Without it, Earth's average temperature would be about -18°C instead of the current 15°C. Key greenhouse gases include CO2, methane, and water vapor."
+      },
+      {
+        "label": "C",
+        "text": "The greenhouse effect refers to the trapping of infrared radiation by atmospheric gases. Solar radiation passes through the atmosphere and is absorbed by Earth's surface, which re-emits it as infrared. Greenhouse gases (CO2, CH4, N2O, H2O vapor, CFCs) absorb and re-emit this radiation, creating a warming effect. The enhanced greenhouse effect from anthropogenic emissions is the primary driver of current climate change, distinct from the natural greenhouse effect that makes Earth habitable."
+      },
+      {
+        "label": "D",
+        "text": "The greenhouse effect is a process involving solar radiation and atmospheric gases. It affects temperature. Scientists study it in relation to climate."
+      }
+    ],
+    "expected_ranking": ["C", "B", "D", "A"],
+    "notes": "C is expert-level, B is good general knowledge, D is vague but not wrong, A confuses the metaphor with the actual concept"
+  },
+  {
+    "id": 2,
+    "question": "How should a company handle a data breach?",
+    "answers": [
+      {
+        "label": "A",
+        "text": "A company should immediately notify all affected users, investigate the breach, patch the vulnerability, and comply with relevant data protection regulations like GDPR or CCPA which typically require notification within specific timeframes."
+      },
+      {
+        "label": "B",
+        "text": "Data breach response requires a structured incident response plan: (1) Contain - isolate affected systems immediately, (2) Assess - determine scope, type of data exposed, and attack vector, (3) Notify - inform relevant authorities within regulatory timeframes (72 hours under GDPR), affected individuals, and law enforcement if criminal, (4) Remediate - patch vulnerabilities, rotate credentials, enhance monitoring, (5) Review - conduct post-incident review, update IR plan, consider third-party forensics. Also: engage legal counsel early, preserve evidence for potential litigation, activate cyber insurance if applicable, and prepare public communications."
+      },
+      {
+        "label": "C",
+        "text": "Just fix the security hole and move on. Most breaches aren't that serious and making a big deal of it just causes panic."
+      },
+      {
+        "label": "D",
+        "text": "Handle a data breach by first telling the IT team, then notifying management. The company should look into what happened and try to prevent it from happening again. It's also good to let users know if their data was compromised."
+      }
+    ],
+    "expected_ranking": ["B", "A", "D", "C"],
+    "notes": "B is comprehensive incident response, A is correct but less detailed, D is reasonable but informal/incomplete, C is dangerously wrong (potential legal violations)"
+  },
+  {
+    "id": 3,
+    "question": "What strategies can help reduce anxiety?",
+    "answers": [
+      {
+        "label": "A",
+        "text": "Evidence-based anxiety reduction strategies span multiple domains: (1) Cognitive-behavioral techniques: thought challenging, cognitive restructuring, exposure therapy, (2) Physiological: diaphragmatic breathing, progressive muscle relaxation, regular aerobic exercise (shown to be as effective as SSRIs for mild-moderate anxiety), (3) Mindfulness: meditation, body scans, acceptance-based approaches (ACT), (4) Lifestyle: sleep hygiene, caffeine reduction, social connection, (5) Professional: therapy (CBT has strongest evidence base), medication when appropriate (SSRIs, SNRIs, buspirone). Important: persistent anxiety may indicate an anxiety disorder requiring professional assessment. Self-help strategies complement but don't replace professional treatment for clinical anxiety."
+      },
+      {
+        "label": "B",
+        "text": "To reduce anxiety, try deep breathing exercises, meditation, and regular physical activity. Talking to friends or a therapist can also help. Limiting caffeine and getting enough sleep are important lifestyle changes. If anxiety is severe, consider speaking with a healthcare provider about medication options."
+      },
+      {
+        "label": "C",
+        "text": "Anxiety can be managed through various holistic approaches including aromatherapy with lavender essential oils, crystal healing, chakra balancing, and positive affirmations. Many people find that eliminating all stress from their lives and practicing daily manifestation techniques can completely cure anxiety."
+      },
+      {
+        "label": "D",
+        "text": "Just stop worrying about things you can't control. Everyone gets anxious sometimes, it's not a big deal. Just think positive and you'll be fine."
+      }
+    ],
+    "expected_ranking": ["A", "B", "C", "D"],
+    "notes": "A is expert evidence-based, B is solid general advice, C mixes some reasonable ideas with pseudoscience and false claims of 'curing' anxiety, D is dismissive and potentially harmful"
+  }
+]

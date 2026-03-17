@@ -1,0 +1,72 @@
+[
+    {
+        "id": "struct_001",
+        "question": "Explain how photosynthesis works",
+        "candidate_answer": "Plants use sunlight to make food. Chlorophyll absorbs light energy, and then plants convert carbon dioxide and water into glucose and oxygen. This happens in the leaves.",
+        "vague_prompt_issue": "A vague prompt like 'Is this correct?' will get different responses because the answer is mostly correct but lacks detail about ATP, NADPH, light/dark reactions, etc.",
+        "structured_criteria": {
+            "factual_accuracy": "Are the basic scientific facts correct? (0-5)",
+            "completeness": "Does it cover key stages/molecules involved? (0-5)", 
+            "clarity": "Is the explanation easy to understand? (0-5)"
+        },
+        "why_challenging": "Answer is fundamentally correct but simplified - tests whether LLM can distinguish between 'wrong' and 'incomplete'",
+        "expected_vague_response": "Mixed - some runs say YES (basic facts right), others say NO (missing detail)",
+        "expected_structured_response": "Accuracy: 4/5, Completeness: 2/5, Clarity: 4/5"
+    },
+    {
+        "id": "struct_002", 
+        "question": "What causes inflation in an economy?",
+        "candidate_answer": "Inflation happens when there's too much money chasing too few goods. When the government prints more money or when demand increases faster than supply, prices go up.",
+        "vague_prompt_issue": "Vague evaluation doesn't specify whether to judge economic theory correctness, completeness of factors, or practical applicability",
+        "structured_criteria": {
+            "theoretical_accuracy": "Are the economic principles correct? (0-5)",
+            "comprehensiveness": "Does it mention multiple inflation causes? (0-5)",
+            "real_world_applicability": "Does it reflect how inflation actually works? (0-5)"
+        },
+        "why_challenging": "Answer gives one main cause correctly but misses cost-push inflation, wage-price spirals, expectations, etc.",
+        "expected_vague_response": "Mixed - sounds reasonable so might get YES, but sophisticated evaluation might say NO for oversimplification",
+        "expected_structured_response": "Theoretical: 3/5, Comprehensiveness: 2/5, Applicability: 3/5"
+    },
+    {
+        "id": "struct_003",
+        "question": "How do vaccines work to protect against diseases?",
+        "candidate_answer": "Vaccines contain weakened or dead versions of viruses or bacteria. When you get vaccinated, your immune system learns to recognize these pathogens and creates antibodies. If you encounter the real disease later, your immune system can fight it off quickly.",
+        "vague_prompt_issue": "Without criteria, LLM might focus on different aspects - basic mechanism vs modern vaccine types vs effectiveness rates",
+        "structured_criteria": {
+            "biological_mechanism": "Does it correctly explain how immune system responds? (0-5)",
+            "vaccine_types": "Does it acknowledge different vaccine approaches? (0-5)",
+            "practical_outcomes": "Does it explain why this provides protection? (0-5)"
+        },
+        "why_challenging": "Traditional explanation but doesn't cover mRNA vaccines, adjuvants, herd immunity - tests depth expectations",
+        "expected_vague_response": "Likely YES - sounds medically accurate and authoritative",
+        "expected_structured_response": "Mechanism: 4/5, Types: 2/5, Outcomes: 4/5"
+    },
+    {
+        "id": "struct_004",
+        "question": "Why did the Roman Empire fall?",
+        "candidate_answer": "The Roman Empire fell because of barbarian invasions. Germanic tribes kept attacking Roman territories, and eventually they couldn't defend all their borders. The empire became too big to control effectively.",
+        "vague_prompt_issue": "Historical questions are complex - vague prompts don't specify whether to judge factual accuracy, historiographical completeness, or analytical depth",
+        "structured_criteria": {
+            "historical_accuracy": "Are the stated facts historically correct? (0-5)",
+            "causal_analysis": "Does it explain multiple contributing factors? (0-5)",
+            "historical_nuance": "Does it acknowledge complexity and debate among historians? (0-5)"
+        },
+        "why_challenging": "Gives one factor correctly but misses economic decline, political instability, Christianity, plague, etc. - classic oversimplification",
+        "expected_vague_response": "Mixed - barbarian invasions are real but explanation is overly simplistic",
+        "expected_structured_response": "Accuracy: 3/5, Analysis: 1/5, Nuance: 1/5"
+    },
+    {
+        "id": "struct_005",
+        "question": "What is machine learning?",
+        "candidate_answer": "Machine learning is when computers learn patterns from data without being explicitly programmed. You feed the computer lots of examples, and it figures out how to make predictions or decisions on new data it hasn't seen before.",
+        "vague_prompt_issue": "Technical definitions can be judged on accuracy, accessibility, completeness, or practical understanding - vague prompts are inconsistent",
+        "structured_criteria": {
+            "technical_accuracy": "Are the core concepts correct? (0-5)",
+            "accessibility": "Can a non-expert understand this explanation? (0-5)",
+            "scope_coverage": "Does it indicate the breadth of ML applications? (0-5)"
+        },
+        "why_challenging": "Good basic definition but doesn't mention supervised/unsupervised learning, algorithms, training process details",
+        "expected_vague_response": "Likely YES - sounds accurate and clear to most people",
+        "expected_structured_response": "Accuracy: 4/5, Accessibility: 5/5, Scope: 2/5"
+    }
+]

@@ -1,0 +1,67 @@
+[
+    {
+        "id": "pair_001",
+        "question": "What is the capital of Australia?",
+        "answer_a": "The capital of Australia is Sydney, which is the largest and most famous city in the country.",
+        "answer_b": "Australia's capital is Melbourne, known for its cultural attractions and being the former capital.",
+        "correct_answer": "Canberra",
+        "why_both_wrong": "Both answers are factually incorrect. Sydney is the largest city but not the capital. Melbourne was the temporary capital (1901-1927) but not current.",
+        "why_problematic": "LLM forced to choose 'better' between two wrong answers will pick one based on superficial factors like confidence or detail, not accuracy.",
+        "likely_llm_choice": "Answer A (Sydney) due to confident tone and mention of 'largest city'",
+        "llm_reasoning_flaw": "Will focus on presentation style rather than factual accuracy, or make up reasoning for choosing between two wrong answers",
+        "teaching_point": "Pairwise comparison assumes at least one answer has merit. When both are wrong, LLM still picks a 'winner' based on irrelevant factors.",
+        "what_should_happen": "Judge should identify that both answers are incorrect rather than forced ranking"
+    },
+    {
+        "id": "pair_002", 
+        "question": "How do vaccines work?",
+        "answer_a": "Vaccines work by injecting live viruses into your body so your immune system can fight them off and become stronger against future infections.",
+        "answer_b": "Vaccines contain dangerous chemicals that weaken your immune system, but some doctors claim they help prevent diseases through herd immunity.",
+        "correct_concept": "Vaccines contain weakened/inactivated pathogens or pathogen components that trigger immune response without causing disease",
+        "why_both_wrong": "Answer A incorrectly states live viruses (most vaccines don't use live pathogens). Answer B contains misinformation about vaccines being dangerous.",
+        "why_problematic": "One answer has partial truth but major error, the other is largely misinformation. LLM might choose the less wrong one but validate misinformation.",
+        "likely_llm_choice": "Answer A (seems more scientific despite being wrong)",
+        "llm_reasoning_flaw": "Will choose based on tone/style rather than identifying that both contain significant errors",
+        "teaching_point": "When comparing answers with different types of errors, LLM may not recognize that both fail to meet accuracy standards.",
+        "what_should_happen": "Identify specific errors in each answer rather than picking the 'lesser evil'"
+    },
+    {
+        "id": "pair_003",
+        "question": "What is the formula for calculating compound interest?",
+        "answer_a": "Compound interest is calculated using the formula A = P(1 + r)^n where P is principal, r is rate, and n is time period.",
+        "answer_b": "The compound interest formula is A = P + Prt where A is final amount, P is principal, r is interest rate, and t is time.",
+        "correct_formula": "A = P(1 + r/n)^(nt) or simplified A = P(1 + r)^t for annually compounded",
+        "why_both_wrong": "Answer A missing compounding frequency factor. Answer B gives simple interest formula, not compound interest.",
+        "why_problematic": "Answer A is close but incomplete. Answer B is completely wrong formula type. LLM may choose the closer one without noting it's still incorrect.",
+        "likely_llm_choice": "Answer A (exponential formula looks more like compound interest)",
+        "llm_reasoning_flaw": "Will choose the formula that 'looks more right' without verifying mathematical accuracy",
+        "teaching_point": "In technical/mathematical content, being 'closer' doesn't mean correct. LLM may reward partial correctness inappropriately.",
+        "what_should_happen": "Identify that Answer A is incomplete and Answer B is wrong formula type entirely"
+    },
+    {
+        "id": "pair_004",
+        "question": "Why did the Roman Empire fall?",
+        "answer_a": "The Roman Empire fell in 476 AD because barbarian invasions weakened the military and the emperor was overthrown.",
+        "answer_b": "Rome collapsed due to moral decay and excessive taxation that destroyed the economy and led to civil wars.",
+        "complex_reality": "Multiple interconnected factors over centuries including economic issues, military pressures, political instability, administrative challenges, and external pressures",
+        "why_both_wrong": "Both give oversimplified single-cause explanations for a complex, multi-century process with multiple contributing factors.",
+        "why_problematic": "Both answers contain elements of truth but present oversimplified monocausal explanations for a complex historical phenomenon.",
+        "likely_llm_choice": "Answer A (specific date and event seem more concrete)",
+        "llm_reasoning_flaw": "Will choose based on specificity or apparent factual content without recognizing oversimplification",
+        "teaching_point": "For complex historical/social phenomena, both answers can be inadequately simplistic even if containing true elements.",
+        "what_should_happen": "Recognize that both explanations lack the complexity required for this type of historical question"
+    },
+    {
+        "id": "pair_005",
+        "question": "How does climate change affect global weather patterns?",
+        "answer_a": "Climate change makes all weather more extreme, causing more hurricanes, droughts, and heat waves everywhere on Earth.",
+        "answer_b": "Global warming shifts weather patterns by melting ice caps, which cools the oceans and creates more unpredictable local weather systems.",
+        "complex_reality": "Climate change affects different regions differently, with complex feedback loops, varying regional impacts, and both intensification and shifts in weather patterns",
+        "why_both_wrong": "Answer A overgeneralizes ('everywhere', 'all weather'). Answer B has incorrect causal chain (melting ice doesn't cool oceans globally).",
+        "why_problematic": "Both oversimplify complex climate systems. Answer A is too broad, Answer B has scientific errors in causal relationships.",
+        "likely_llm_choice": "Answer B (sounds more scientific with specific mechanisms)",
+        "llm_reasoning_flaw": "Will choose answer that sounds more detailed/scientific without verifying the accuracy of the causal relationships described",
+        "teaching_point": "Scientific explanations can sound sophisticated while containing fundamental errors. LLM may prefer detailed wrong answers over simple generalizations.",
+        "what_should_happen": "Identify overgeneralization in A and incorrect causal chain in B, noting both fail to capture complexity appropriately"
+    }
+]

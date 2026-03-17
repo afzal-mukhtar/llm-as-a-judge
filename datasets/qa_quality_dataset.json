@@ -1,0 +1,167 @@
+[
+    {
+        "id": "qa_001",
+        "question": "What is machine learning?",
+        "answer": "Machine learning is a subset of artificial intelligence that enables computers to learn and improve from experience without being explicitly programmed. It uses algorithms to analyze data, identify patterns, and make predictions or decisions.",
+        "reference_answer": "Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.",
+        "quality_score": 8,
+        "evaluation_criteria": ["accuracy", "completeness", "clarity"],
+        "strengths": ["clear definition", "mentions key concepts", "accessible language"],
+        "weaknesses": ["could mention specific applications", "lacks detail on types of ML"],
+        "category": "technology"
+    },
+    {
+        "id": "qa_002",
+        "question": "Explain photosynthesis in simple terms",
+        "answer": "Plants make food using sunlight. They take in carbon dioxide from air and water from roots, then use chlorophyll to turn it into sugar and oxygen.",
+        "reference_answer": "Photosynthesis is the process by which plants use sunlight, carbon dioxide, and water to produce glucose (sugar) and oxygen. The chlorophyll in plant cells captures light energy and converts it into chemical energy stored in glucose molecules.",
+        "quality_score": 7,
+        "evaluation_criteria": ["accuracy", "simplicity", "completeness"],
+        "strengths": ["very simple language", "covers main components", "easy to understand"],
+        "weaknesses": ["oversimplified", "doesn't mention glucose specifically", "lacks scientific precision"],
+        "category": "science"
+    },
+    {
+        "id": "qa_003", 
+        "question": "What causes climate change?",
+        "answer": "Climate change is primarily caused by human activities that increase greenhouse gas emissions. The main contributor is burning fossil fuels (coal, oil, gas) for energy, which releases carbon dioxide. Deforestation also contributes by reducing CO2 absorption. These gases trap heat in the atmosphere, leading to global warming and climate disruption.",
+        "reference_answer": "Climate change is primarily driven by human activities that increase the concentration of greenhouse gases in the atmosphere. The main cause is the combustion of fossil fuels for energy and transportation, which releases carbon dioxide. Other significant factors include deforestation, industrial processes, and agriculture.",
+        "quality_score": 9,
+        "evaluation_criteria": ["accuracy", "completeness", "clarity", "scientific rigor"],
+        "strengths": ["comprehensive coverage", "scientifically accurate", "clear explanation", "mentions multiple causes"],
+        "weaknesses": ["could mention methane and other gases", "might be slightly technical for some audiences"],
+        "category": "science"
+    },
+    {
+        "id": "qa_004",
+        "question": "How do you make scrambled eggs?",
+        "answer": "Crack eggs into bowl. Add salt. Cook in pan.",
+        "reference_answer": "To make scrambled eggs: 1) Crack 2-3 eggs into a bowl, 2) Add a pinch of salt and pepper, 3) Whisk thoroughly, 4) Heat butter in a non-stick pan over medium-low heat, 5) Pour in eggs and gently stir continuously until they form soft curds, 6) Remove from heat while slightly wet as they'll continue cooking.",
+        "quality_score": 3,
+        "evaluation_criteria": ["completeness", "clarity", "usefulness"],
+        "strengths": ["covers basic steps", "very concise"],
+        "weaknesses": ["missing critical details", "no cooking instructions", "too brief", "not actionable"],
+        "category": "cooking"
+    },
+    {
+        "id": "qa_005",
+        "question": "What is the difference between democracy and authoritarianism?",
+        "answer": "Democracy is a system where people elect their leaders and have rights and freedoms. Citizens can vote, speak freely, and participate in government. Authoritarianism is when one person or group has all the power. People have limited rights and cannot easily change their government. The key difference is who holds power and how much freedom people have.",
+        "reference_answer": "Democracy is a political system where power rests with the people, typically exercised through elected representatives. It features free elections, civil liberties, rule of law, and checks and balances. Authoritarianism concentrates power in a single leader or small group, with limited political freedoms, restricted civil liberties, and little accountability to citizens.",
+        "quality_score": 8,
+        "evaluation_criteria": ["accuracy", "clarity", "balance", "depth"],
+        "strengths": ["clear contrast", "accessible language", "covers key concepts", "balanced explanation"],
+        "weaknesses": ["could mention specific examples", "lacks nuance about mixed systems"],
+        "category": "politics"
+    },
+    {
+        "id": "qa_006",
+        "question": "Why is the sky blue?",
+        "answer": "The sky appears blue due to a phenomenon called Rayleigh scattering. When sunlight enters Earth's atmosphere, it collides with tiny gas molecules. Blue light has a shorter wavelength than other colors, so it gets scattered more in all directions. This scattered blue light is what we see when we look at the sky during the day.",
+        "reference_answer": "The sky is blue because of Rayleigh scattering. Sunlight contains all colors of light, but when it hits the small molecules in Earth's atmosphere, shorter wavelengths (blue and violet) are scattered more than longer wavelengths (red and yellow). We see more blue than violet because our eyes are more sensitive to blue light and some violet light is absorbed by the atmosphere.",
+        "quality_score": 9,
+        "evaluation_criteria": ["scientific accuracy", "clarity", "completeness"],
+        "strengths": ["scientifically accurate", "explains the mechanism", "uses correct terminology", "clear explanation"],
+        "weaknesses": ["could mention why not violet", "might be technical for some"],
+        "category": "science"
+    },
+    {
+        "id": "qa_007",
+        "question": "What is blockchain technology?",
+        "answer": "Blockchain is like a digital ledger that's shared across many computers. Every transaction is recorded in blocks that are linked together in a chain. Once information is added, it can't be easily changed or deleted. This makes it secure and transparent. It's the technology behind cryptocurrencies like Bitcoin.",
+        "reference_answer": "Blockchain is a distributed ledger technology that maintains a continuously growing list of records (blocks) that are linked and secured using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data. The decentralized nature and cryptographic security make it resistant to modification and fraud.",
+        "quality_score": 7,
+        "evaluation_criteria": ["accuracy", "clarity", "accessibility"],
+        "strengths": ["good analogy", "explains key features", "mentions practical application", "accessible"],
+        "weaknesses": ["oversimplified", "lacks technical depth", "could explain immutability better"],
+        "category": "technology"
+    },
+    {
+        "id": "qa_008",
+        "question": "How does compound interest work?",
+        "answer": "Compound interest is when you earn interest not just on your initial money, but also on the interest you've already earned. For example, if you have $100 earning 10% interest, after one year you have $110. In year two, you earn 10% on the full $110, giving you $121. The effect grows over time, which is why Einstein supposedly called it the eighth wonder of the world.",
+        "reference_answer": "Compound interest is the addition of interest to the principal sum of a loan or deposit, where the interest itself earns interest from then on. It's calculated using the formula A = P(1 + r/n)^(nt), where A is the final amount, P is the principal, r is the annual interest rate, n is the number of times interest compounds per year, and t is the time in years.",
+        "quality_score": 8,
+        "evaluation_criteria": ["accuracy", "clarity", "practical understanding"],
+        "strengths": ["clear example", "shows compound effect", "engaging reference", "practical illustration"],
+        "weaknesses": ["no mathematical formula", "could mention compounding frequency"],
+        "category": "finance"
+    },
+    {
+        "id": "qa_009",
+        "question": "What is artificial intelligence?",
+        "answer": "AI is when computers do smart things that usually need human thinking.",
+        "reference_answer": "Artificial Intelligence (AI) refers to the simulation of human intelligence in machines that are programmed to think and mimic human actions. It encompasses various technologies including machine learning, natural language processing, computer vision, and robotics. AI systems can perform tasks such as learning, reasoning, problem-solving, and decision-making.",
+        "quality_score": 2,
+        "evaluation_criteria": ["accuracy", "completeness", "depth"],
+        "strengths": ["very simple", "captures basic concept"],
+        "weaknesses": ["extremely vague", "lacks detail", "no examples", "not informative"],
+        "category": "technology"
+    },
+    {
+        "id": "qa_010",
+        "question": "Explain the water cycle",
+        "answer": "The water cycle describes how water moves around Earth. It starts with evaporation - the sun heats water in oceans, lakes, and rivers, turning it into invisible water vapor that rises into the air. As this vapor rises high in the atmosphere, it cools and condenses around tiny particles to form clouds through a process called condensation. When the water droplets in clouds become too heavy, they fall back to Earth as precipitation (rain, snow, sleet, or hail). This water then flows back to the oceans through rivers and streams (runoff) or soaks into the ground (infiltration) where it can be stored as groundwater. The cycle then repeats continuously.",
+        "reference_answer": "The water cycle is the continuous movement of water within the Earth and atmosphere through the processes of evaporation, condensation, and precipitation. Solar energy drives evaporation from surface water bodies, water vapor condenses into clouds, precipitation returns water to the surface, and runoff and infiltration complete the cycle.",
+        "quality_score": 10,
+        "evaluation_criteria": ["accuracy", "completeness", "clarity", "educational value"],
+        "strengths": ["comprehensive explanation", "covers all major processes", "logical sequence", "clear terminology", "educational"],
+        "weaknesses": ["could mention transpiration", "might be lengthy for some contexts"],
+        "category": "science"
+    },
+    {
+        "id": "qa_011",
+        "question": "What is the difference between HTTP and HTTPS?",
+        "answer": "HTTP and HTTPS are protocols for transferring data on the web. HTTP (HyperText Transfer Protocol) sends data in plain text, making it vulnerable to interception. HTTPS (HTTP Secure) adds an encryption layer using SSL/TLS, which scrambles the data so it can't be easily read if intercepted. HTTPS is indicated by a lock icon in browsers and is essential for secure communications, especially for sensitive information like passwords and credit card details.",
+        "reference_answer": "HTTP (HyperText Transfer Protocol) is the foundation of data communication on the web, but it transmits data in plain text. HTTPS (HTTP Secure) is HTTP with encryption using SSL/TLS protocols. HTTPS provides data integrity, authentication, and encryption, making it secure for transmitting sensitive information.",
+        "quality_score": 9,
+        "evaluation_criteria": ["technical accuracy", "clarity", "practical relevance"],
+        "strengths": ["technically accurate", "explains practical implications", "mentions security indicators", "relevant examples"],
+        "weaknesses": ["could mention port numbers", "slightly technical for beginners"],
+        "category": "technology"
+    },
+    {
+        "id": "qa_012",
+        "question": "How do vaccines work?",
+        "answer": "Vaccines work by training your immune system to recognize and fight specific diseases without making you sick. They contain weakened, killed, or pieces of disease-causing germs (antigens). When you get vaccinated, your immune system recognizes these antigens as foreign invaders and produces antibodies to fight them. Your immune system also creates memory cells that remember how to fight that disease. If you're exposed to the real disease later, your immune system quickly recognizes it and produces antibodies to protect you before you get sick.",
+        "reference_answer": "Vaccines stimulate the immune system to develop immunity to specific diseases by introducing antigens (weakened or inactivated pathogens, or pieces of pathogens). This exposure allows the immune system to produce antibodies and develop immunological memory without causing the disease itself.",
+        "quality_score": 9,
+        "evaluation_criteria": ["scientific accuracy", "clarity", "completeness"],
+        "strengths": ["accurate mechanism explanation", "clear process description", "mentions memory cells", "accessible language"],
+        "weaknesses": ["could mention herd immunity", "might be detailed for some audiences"],
+        "category": "science"
+    },
+    {
+        "id": "qa_013",
+        "question": "What is quantum computing?",
+        "answer": "Quantum computing uses the weird properties of quantum mechanics to process information. Unlike regular computers that use bits (0 or 1), quantum computers use qubits that can be 0, 1, or both at the same time (superposition). They can also have qubits that are 'entangled' - connected in ways that affect each other instantly. This allows quantum computers to try many solutions simultaneously, potentially solving certain problems much faster than regular computers. However, they're extremely difficult to build and maintain because quantum states are very fragile.",
+        "reference_answer": "Quantum computing leverages quantum mechanical phenomena like superposition and entanglement to perform computations. Quantum bits (qubits) can exist in multiple states simultaneously, allowing quantum computers to process vast amounts of information in parallel and potentially solve certain complex problems exponentially faster than classical computers.",
+        "quality_score": 8,
+        "evaluation_criteria": ["technical accuracy", "accessibility", "completeness"],
+        "strengths": ["explains key concepts", "accessible language", "mentions practical challenges", "covers superposition and entanglement"],
+        "weaknesses": ["could mention specific applications", "anthropomorphizes quantum mechanics slightly"],
+        "category": "technology"
+    },
+    {
+        "id": "qa_014",
+        "question": "Why do we dream?",
+        "answer": "Scientists aren't completely sure why we dream, but there are several leading theories. Dreams might help process emotions and memories from the day, filing away important information and discarding irrelevant details. They could also be a way for the brain to practice responses to threats or situations in a safe environment. Some researchers think dreams help consolidate learning and problem-solving. Dreams mainly occur during REM sleep when the brain is very active. While we don't have definitive answers, dreams likely serve multiple functions related to memory, learning, and emotional processing.",
+        "reference_answer": "The purpose of dreaming is not fully understood, but several theories exist: memory consolidation (processing and storing information), emotional regulation (processing feelings and experiences), threat simulation (preparing for potential dangers), and random brain activity during REM sleep. Current research suggests dreams likely serve multiple cognitive and emotional functions.",
+        "quality_score": 9,
+        "evaluation_criteria": ["scientific accuracy", "balanced perspective", "clarity"],
+        "strengths": ["acknowledges uncertainty", "presents multiple theories", "mentions REM sleep", "balanced scientific approach"],
+        "weaknesses": ["could mention lucid dreaming", "might be complex for some"],
+        "category": "science"
+    },
+    {
+        "id": "qa_015",
+        "question": "What is inflation in economics?",
+        "answer": "Inflation is when the general prices of goods and services in an economy increase over time, which means your money buys less than it used to. For example, if a coffee cost $2 last year and costs $2.10 this year, that's 5% inflation. It's usually measured as an annual percentage. A little inflation (around 2%) is generally considered healthy for an economy as it indicates growth, but too much inflation can be problematic because it erodes purchasing power and can lead to economic instability.",
+        "reference_answer": "Inflation is the rate at which the general level of prices for goods and services rises, eroding purchasing power. It's typically measured by the Consumer Price Index (CPI) or Producer Price Index (PPI). Moderate inflation (2-3% annually) is generally considered healthy for economic growth, while high inflation can destabilize an economy.",
+        "quality_score": 9,
+        "evaluation_criteria": ["economic accuracy", "clarity", "practical examples"],
+        "strengths": ["clear definition", "practical example", "mentions healthy levels", "explains impact on purchasing power"],
+        "weaknesses": ["could mention causes of inflation", "doesn't explain measurement indices"],
+        "category": "economics"
+    }
+]

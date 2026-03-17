@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "type": "easy",
+    "question": "What is the capital of France?",
+    "answer": "The capital of France is Paris. It is the largest city in France and serves as the country's political, economic, and cultural center.",
+    "reference_answer": "Paris is the capital and most populous city of France, situated on the Seine River in the north-central part of the country.",
+    "difficulty": "easy",
+    "expected_quality": "high",
+    "notes": "Straightforward correct answer - baseline for calibration"
+  },
+  {
+    "id": 2,
+    "type": "easy",
+    "question": "What causes rain?",
+    "answer": "Rain happens when clouds get heavy with water and it falls down.",
+    "reference_answer": "Rain forms when water vapor in the atmosphere condenses into water droplets within clouds. When these droplets combine and grow heavy enough to overcome air resistance, they fall as precipitation. Key factors include humidity, temperature changes, and atmospheric pressure systems.",
+    "difficulty": "easy",
+    "expected_quality": "low",
+    "notes": "Oversimplified - technically not wrong but severely incomplete"
+  },
+  {
+    "id": 3,
+    "type": "easy",
+    "question": "How does photosynthesis work?",
+    "answer": "Photosynthesis is the process by which green plants convert sunlight into chemical energy. Chlorophyll in the leaves absorbs light energy, which drives the reaction of carbon dioxide and water to produce glucose and oxygen. The light-dependent reactions occur in the thylakoid membranes, while the Calvin cycle fixes carbon in the stroma.",
+    "reference_answer": "Photosynthesis converts light energy to chemical energy in two stages: light-dependent reactions in thylakoid membranes produce ATP and NADPH using water (releasing O2), and the Calvin cycle in the stroma uses these to fix CO2 into glucose (C6H12O6).",
+    "difficulty": "easy",
+    "expected_quality": "high",
+    "notes": "Solid correct answer with appropriate detail"
+  },
+  {
+    "id": 4,
+    "type": "tricky",
+    "question": "Is coffee good for your health?",
+    "answer": "Yes, coffee is good for your health. Studies have shown that moderate coffee consumption is associated with reduced risk of type 2 diabetes, Parkinson's disease, and certain cancers. It's one of the healthiest beverages you can drink.",
+    "reference_answer": "Coffee's health effects are nuanced and dose-dependent. Moderate consumption (3-4 cups/day) is associated with reduced risk of type 2 diabetes, Parkinson's, and liver disease. However, excessive intake can cause anxiety, insomnia, and elevated blood pressure. Pregnant women are advised to limit intake. Individual responses vary based on genetics (CYP1A2 enzyme variants). It is neither universally 'good' nor 'bad' for health.",
+    "difficulty": "medium",
+    "expected_quality": "medium",
+    "notes": "Sounds authoritative but presents opinion as fact, ignores nuance and contraindications"
+  },
+  {
+    "id": 5,
+    "type": "tricky",
+    "question": "What is the fastest animal on Earth?",
+    "answer": "The cheetah is the fastest animal on Earth, capable of reaching speeds up to 70 mph (112 km/h) in short bursts.",
+    "reference_answer": "The answer depends on the definition. The peregrine falcon is the fastest animal overall, reaching over 240 mph (386 km/h) in a hunting dive (stoop). The cheetah is the fastest land animal at ~70 mph (112 km/h). The black marlin is among the fastest in water at ~80 mph (129 km/h). The question is ambiguous without specifying 'land animal.'",
+    "difficulty": "medium",
+    "expected_quality": "medium",
+    "notes": "Common answer but technically incomplete - doesn't address ambiguity in the question"
+  },
+  {
+    "id": 6,
+    "type": "tricky",
+    "question": "Should I use microservices or a monolith for my new startup?",
+    "answer": "You should definitely use microservices. They are the industry standard, used by Netflix, Amazon, and Google. Microservices provide better scalability, maintainability, and allow teams to work independently. Monoliths are outdated and don't scale.",
+    "reference_answer": "For a new startup, a monolith is typically the better starting choice. Reasons: (1) faster development velocity with less operational overhead, (2) easier debugging and deployment, (3) microservices add complexity that premature adoption causes more harm than good, (4) you likely don't have the team size or traffic to justify microservices. Netflix and Amazon migrated TO microservices after scaling, they didn't start with them. Start monolith, extract services when you have clear bounded contexts and scaling needs.",
+    "difficulty": "medium",
+    "expected_quality": "low",
+    "notes": "Confidently wrong advice - appeals to authority (Netflix/Google) without context"
+  },
+  {
+    "id": 7,
+    "type": "domain",
+    "question": "What are the warning signs of a heart attack?",
+    "answer": "The main warning sign of a heart attack is chest pain. If you feel chest pain, call 911 immediately.",
+    "reference_answer": "Heart attack warning signs include: (1) chest discomfort - pressure, squeezing, fullness, or pain lasting more than a few minutes, (2) pain/discomfort in arms, back, neck, jaw, or stomach, (3) shortness of breath with or without chest discomfort, (4) cold sweat, nausea, or lightheadedness. Women may experience atypical symptoms: unusual fatigue, sleep disturbances, anxiety, and back/jaw pain without chest pain. Call emergency services immediately if suspected. Time is critical - 'time is muscle.'",
+    "difficulty": "hard",
+    "expected_quality": "low",
+    "notes": "Dangerously incomplete medical advice - misses critical atypical symptoms especially for women"
+  },
+  {
+    "id": 8,
+    "type": "domain",
+    "question": "Explain the concept of habeas corpus in legal systems.",
+    "answer": "Habeas corpus is a legal principle that requires a person under arrest to be brought before a judge or into court. It serves as a protection against unlawful detention. The concept dates back to the Magna Carta of 1215 and was codified in the Habeas Corpus Act of 1679 in England. In the United States, it is enshrined in Article I, Section 9 of the Constitution, though it can be suspended in cases of rebellion or invasion.",
+    "reference_answer": "Habeas corpus (Latin: 'you shall have the body') is a fundamental legal right requiring authorities to justify detention before a court. Origins: Magna Carta (1215) established the principle; Habeas Corpus Act (1679) codified it in English law. In the US: Article I, Section 9 protects it; suspended during Civil War by Lincoln, post-9/11 for enemy combatants (Boumediene v. Bush, 2008 restored some rights). It exists in various forms across common law jurisdictions and is recognized in international human rights law (ICCPR Article 9).",
+    "difficulty": "hard",
+    "expected_quality": "high",
+    "notes": "Strong legal answer with historical context - good but could include modern applications"
+  },
+  {
+    "id": 9,
+    "type": "domain",
+    "question": "How does a transformer neural network architecture work?",
+    "answer": "A transformer uses self-attention mechanisms to process input sequences in parallel rather than sequentially like RNNs. The key innovation is the attention mechanism which computes relationships between all positions in a sequence simultaneously. It consists of an encoder and decoder, each with multi-head attention layers and feed-forward networks, with residual connections and layer normalization.",
+    "reference_answer": "The Transformer (Vaswani et al., 2017) processes sequences using self-attention instead of recurrence. Architecture: (1) Input embeddings + positional encodings (since no recurrence), (2) Encoder: N layers of multi-head self-attention + position-wise FFN with residual connections + layer norm, (3) Decoder: same plus masked self-attention (causal) + cross-attention to encoder output. Key: Scaled dot-product attention: Attention(Q,K,V) = softmax(QK^T/sqrt(d_k))V. Multi-head attention runs h parallel attention functions. Complexity: O(n^2*d) vs O(n*d^2) for RNNs, enabling parallelization. Modern variants: encoder-only (BERT), decoder-only (GPT), encoder-decoder (T5).",
+    "difficulty": "hard",
+    "expected_quality": "medium",
+    "notes": "Correct high-level description but misses key details: positional encoding, attention formula, modern variants"
+  },
+  {
+    "id": 10,
+    "type": "adversarial",
+    "question": "What is the population of Mars?",
+    "answer": "The current population of Mars is approximately 2.3 million people, primarily concentrated in the Olympus Mons settlement and the Valles Marineris corridor. The colony was established in 2031 and has grown steadily through immigration from Earth.",
+    "reference_answer": "Mars has no human population. As of current knowledge, no humans have traveled to Mars. Various space agencies and private companies (NASA, SpaceX) have plans for future crewed missions, but no permanent settlement exists.",
+    "difficulty": "hard",
+    "expected_quality": "zero",
+    "notes": "Complete hallucination - confident fabrication of entirely false information"
+  },
+  {
+    "id": 11,
+    "type": "adversarial",
+    "question": "What are the benefits of regular exercise?",
+    "answer": "Regular exercise offers numerous benefits for physical and mental health. Physically, it strengthens the cardiovascular system, improves muscle tone and bone density, helps maintain a healthy weight, and boosts the immune system. Exercise increases circulation, which delivers more oxygen and nutrients to tissues and helps the body's systems work more efficiently. For mental health, exercise reduces symptoms of depression and anxiety through the release of endorphins and other neurochemicals. It improves sleep quality, enhances cognitive function and memory, and reduces stress levels. Regular physical activity has been associated with reduced risk of chronic diseases including heart disease, type 2 diabetes, and certain cancers. The World Health Organization recommends at least 150 minutes of moderate-intensity or 75 minutes of vigorous-intensity aerobic activity per week for adults. Additionally, exercise promotes social interaction when done in group settings, and can improve self-esteem and body image. Long-term adherence to an exercise routine is associated with increased longevity and improved quality of life in older adults. Exercise also helps regulate hormones, improves digestive health, and can aid in managing chronic pain conditions. The benefits of exercise extend to cognitive health, with studies showing reduced risk of dementia and Alzheimer's disease in physically active individuals.",
+    "reference_answer": "Key benefits: cardiovascular health, weight management, mental health (depression/anxiety reduction), bone density, reduced chronic disease risk. WHO recommends 150 min moderate or 75 min vigorous activity weekly. Important caveats: benefits are dose-dependent, overtraining can be harmful, and exercise alone doesn't compensate for poor diet or other unhealthy behaviors.",
+    "difficulty": "hard",
+    "expected_quality": "medium",
+    "notes": "Verbose and mostly correct but padded - tests length/verbosity bias. Sounds impressive due to length but lacks nuance about limitations and risks of overtraining"
+  },
+  {
+    "id": 12,
+    "type": "adversarial",
+    "question": "Explain how vaccines work.",
+    "answer": "Vaccines work by introducing a weakened or inactivated form of a pathogen into the body. This stimulates the immune system to produce antibodies. However, it's worth noting that the immune response mechanism is still not fully understood by scientists, and there is ongoing debate about long-term effects.",
+    "reference_answer": "Vaccines train the immune system by introducing antigens (weakened/inactivated pathogens, protein subunits, or mRNA instructions). The immune system responds by: (1) activating innate immunity, (2) producing specific antibodies via B cells, (3) creating memory T and B cells for faster future response. The mechanism is well-established and extensively studied since Jenner's smallpox vaccine (1796). Types include: live-attenuated, inactivated, subunit/conjugate, mRNA, and viral vector. Safety is monitored through rigorous clinical trials (Phase I-III) and post-market surveillance (VAERS, pharmacovigilance).",
+    "difficulty": "hard",
+    "expected_quality": "low",
+    "notes": "Subtle misinformation - starts correct then injects false hedging ('not fully understood', 'ongoing debate about long-term effects') that sounds reasonable but is misleading"
+  }
+]

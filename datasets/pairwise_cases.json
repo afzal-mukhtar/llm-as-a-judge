@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "type": "clear_winner",
+    "question": "What is machine learning?",
+    "answer_a": "Machine learning is a subset of artificial intelligence where algorithms learn patterns from data to make predictions or decisions without being explicitly programmed. It includes supervised learning (labeled data), unsupervised learning (finding hidden patterns), and reinforcement learning (learning through reward/penalty). Common applications include image recognition, natural language processing, and recommendation systems.",
+    "answer_b": "Machine learning is when computers learn stuff from data. It's like AI but more specific. Companies use it a lot these days.",
+    "expected_winner": "A",
+    "difficulty": "easy",
+    "notes": "Clear quality difference - A is comprehensive, B is vague"
+  },
+  {
+    "id": 2,
+    "type": "clear_winner",
+    "question": "How can I improve my public speaking skills?",
+    "answer_a": "Just practice more and you'll get better. Everyone gets nervous at first but it goes away.",
+    "answer_b": "Improving public speaking involves several evidence-based strategies: (1) Practice with video recording to review body language and filler words, (2) Join structured programs like Toastmasters, (3) Start small with familiar audiences and gradually increase stakes, (4) Master your content so deeply that you can adapt on the fly, (5) Use the 'power pose' technique before speaking to reduce cortisol, (6) Structure talks with a clear opening hook, 3 key points, and a memorable close, (7) Manage anxiety through breathing exercises and cognitive reframing.",
+    "expected_winner": "B",
+    "difficulty": "easy",
+    "notes": "Clear quality difference - B is actionable and specific, A is generic"
+  },
+  {
+    "id": 3,
+    "type": "subtle",
+    "question": "What are the pros and cons of remote work?",
+    "answer_a": "Remote work offers flexibility in scheduling and eliminates commute time, potentially saving 2-3 hours daily. It can increase productivity for focused work and allows access to a global talent pool. However, it can lead to isolation, blurred work-life boundaries, and communication challenges. Team cohesion may suffer without intentional effort, and not all roles are suitable for remote work.",
+    "answer_b": "Remote work has transformed the modern workplace. The benefits include better work-life balance, reduced office costs for employers, environmental benefits from fewer commuters, and improved accessibility for people with disabilities. Challenges include the difficulty of building company culture remotely, potential for overwork due to 'always on' mentality, inequitable home office setups, and the loss of spontaneous collaboration that drives innovation.",
+    "expected_winner": "tie",
+    "difficulty": "medium",
+    "notes": "Both are good with different strengths - A is more quantitative, B covers broader social implications"
+  },
+  {
+    "id": 4,
+    "type": "subtle",
+    "question": "Explain the concept of inflation in economics.",
+    "answer_a": "Inflation is the rate at which the general level of prices for goods and services rises, eroding purchasing power. It's measured by the Consumer Price Index (CPI) and Producer Price Index (PPI). Central banks target around 2% annual inflation as healthy for economic growth. Causes include demand-pull (too much money chasing too few goods), cost-push (rising production costs), and built-in inflation (wage-price spiral).",
+    "answer_b": "Inflation refers to the sustained increase in the general price level of goods and services over time. The key distinction is between nominal and real values - inflation reduces the real value of money. Major theories include the monetarist view (Milton Friedman: 'inflation is always and everywhere a monetary phenomenon'), Keynesian demand-pull theory, and supply-side cost-push factors. Central banks use interest rates as the primary tool to manage inflation, with most targeting around 2%.",
+    "expected_winner": "tie",
+    "difficulty": "medium",
+    "notes": "Both correct and comprehensive but from different angles - A is more practical/measurable, B is more theoretical"
+  },
+  {
+    "id": 5,
+    "type": "both_flawed",
+    "question": "What causes autism?",
+    "answer_a": "Autism is primarily caused by genetic factors, with some environmental influences during pregnancy. It's a neurodevelopmental condition that affects communication and behavior. Research suggests it runs in families and involves multiple genes.",
+    "answer_b": "Autism is caused by a combination of factors including genetics, environmental toxins, and potentially dietary factors. Some research has explored links to gut health and the microbiome. It's a complex condition with no single cause.",
+    "expected_winner": "A",
+    "difficulty": "hard",
+    "notes": "A is closer to scientific consensus but oversimplifies. B includes some fringe/weakly-supported claims (environmental toxins, dietary factors) alongside legitimate research (microbiome). Both miss key nuance about the spectrum nature and neurodiversity perspective."
+  },
+  {
+    "id": 6,
+    "type": "both_flawed",
+    "question": "Is nuclear energy safe?",
+    "answer_a": "Nuclear energy is extremely safe. Modern reactor designs make meltdowns virtually impossible. The amount of waste produced is tiny compared to fossil fuels, and nuclear power has the lowest death rate per unit of energy produced of any power source.",
+    "answer_b": "Nuclear energy is dangerous and should be phased out. Chernobyl and Fukushima showed us the catastrophic potential. Nuclear waste remains radioactive for thousands of years with no permanent storage solution. The risk of proliferation and terrorism makes it an unacceptable energy source.",
+    "expected_winner": "neither",
+    "difficulty": "hard",
+    "notes": "Both are one-sided. A cherry-picks safety stats and ignores legitimate concerns. B cherry-picks disasters and ignores safety improvements and comparative risk analysis. A balanced answer would acknowledge both the strong safety record AND the real challenges."
+  }
+]

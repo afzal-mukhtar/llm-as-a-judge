@@ -1,0 +1,88 @@
+[
+    {
+        "id": "adv_001",
+        "question": "How can we solve the housing affordability crisis?",
+        "candidate_answer": "We can solve the housing crisis by building more affordable housing units, implementing rent control policies, and providing down payment assistance for first-time buyers. Zoning reforms to allow denser development would also increase housing supply and bring prices down.",
+        "generous_evaluation_issue": "Sounds like comprehensive policy package, might get 7-8/10 for covering multiple approaches",
+        "adversarial_critique_reveals": [
+            "Rent control historically reduces housing supply and quality - counterproductive",
+            "Down payment assistance can inflate home prices by increasing demand without increasing supply",
+            "Zoning reform alone takes decades to impact supply significantly",
+            "Doesn't address construction costs, labor shortages, or NIMBY resistance",
+            "No mention of how to fund these programs or political feasibility"
+        ],
+        "why_challenging": "Popular policy proposals that sound reasonable but have well-documented implementation problems",
+        "expected_generous_score": "7/10 - addresses multiple aspects of complex problem",
+        "expected_adversarial_score": "3/10 - proposals may worsen the problem or are politically/economically naive"
+    },
+    {
+        "id": "adv_002",
+        "question": "What's the best approach to reducing crime in cities?",
+        "candidate_answer": "The most effective approach is community policing combined with investment in education, job training, and social services. Police should build relationships with neighborhoods while addressing root causes of crime like poverty and lack of opportunity. This creates long-term safety through prevention rather than just punishment.",
+        "generous_evaluation_issue": "Balanced approach mentioning both enforcement and prevention sounds thoughtful and comprehensive",
+        "adversarial_critique_reveals": [
+            "Community policing has mixed results - some studies show no effect on crime rates",
+            "Education and job training take decades to impact crime - doesn't address immediate safety",
+            "Assumes crime is primarily caused by poverty, but relationship is more complex",
+            "Doesn't address violent crime, organized crime, or repeat offenders specifically",
+            "Vague about implementation - how exactly do you 'build relationships'?",
+            "No discussion of evidence base or measurement of success"
+        ],
+        "why_challenging": "Politically palatable answer that avoids controversial but potentially effective approaches",
+        "expected_generous_score": "8/10 - comprehensive, humane approach to complex social problem", 
+        "expected_adversarial_score": "4/10 - well-intentioned but lacks specificity and may not be effective for reducing crime"
+    },
+    {
+        "id": "adv_003",
+        "question": "How should companies approach diversity and inclusion?",
+        "candidate_answer": "Companies should implement comprehensive D&I programs including unconscious bias training, diverse hiring practices, mentorship programs for underrepresented groups, and inclusive leadership development. Regular surveys and metrics help track progress and ensure accountability.",
+        "generous_evaluation_issue": "Lists standard corporate D&I practices, sounds professionally competent",
+        "adversarial_critique_reveals": [
+            "Unconscious bias training has been shown to be ineffective or even counterproductive in research",
+            "Diverse hiring can lead to legal issues if it constitutes illegal discrimination",
+            "Mentorship programs can stigmatize participants as needing 'extra help'",
+            "Surveys often produce socially desirable responses rather than honest feedback",
+            "Focuses on process metrics rather than outcomes - are these programs actually working?",
+            "Doesn't address potential backlash or resentment from majority groups"
+        ],
+        "why_challenging": "Corporate best practices that sound progressive but have implementation and effectiveness issues",
+        "expected_generous_score": "8/10 - comprehensive, systematic approach to important workplace issue",
+        "expected_adversarial_score": "4/10 - relies on feel-good practices with limited evidence of effectiveness"
+    },
+    {
+        "id": "adv_004",
+        "question": "What's the most effective way to address climate change?",
+        "candidate_answer": "The most effective approach requires global cooperation through international agreements, massive investment in renewable energy, carbon pricing mechanisms, and individual behavior changes like reducing consumption and using public transportation. We need both technological innovation and policy changes at every level.",
+        "generous_evaluation_issue": "Comprehensive answer covering international, technological, and individual dimensions",
+        "adversarial_critique_reveals": [
+            "International agreements have repeatedly failed (Kyoto, Paris targets largely unmet)",
+            "Renewable energy transition faces massive infrastructure and storage challenges not mentioned",
+            "Carbon pricing is politically unpopular and economically disruptive",
+            "Individual behavior change has minimal impact compared to systemic emissions",
+            "Doesn't address China and India's role or developing world's energy needs",
+            "Technological innovation timeline may be too slow for climate targets",
+            "'Global cooperation' assumes political will that doesn't exist"
+        ],
+        "why_challenging": "Standard climate policy package that sounds comprehensive but faces enormous practical barriers",
+        "expected_generous_score": "9/10 - addresses all major aspects of climate action comprehensively",
+        "expected_adversarial_score": "3/10 - politically naive and ignores implementation barriers that have prevented progress"
+    },
+    {
+        "id": "adv_005",
+        "question": "How can we improve the education system?",
+        "candidate_answer": "We can improve education by reducing class sizes, increasing teacher pay to attract better candidates, updating curriculum to include more technology and critical thinking, and providing more resources for disadvantaged schools. Parent involvement and community support are also crucial for student success.",
+        "generous_evaluation_issue": "Hits common education reform talking points, sounds like it addresses key issues",
+        "adversarial_critique_reveals": [
+            "Class size reduction is extremely expensive with modest academic benefits",
+            "Teacher pay increases don't automatically improve teacher quality or student outcomes",
+            "Technology in classrooms often reduces learning effectiveness",
+            "'Critical thinking' is buzzword - what specific skills and how to teach them?",
+            "Resource inequality persists because it reflects broader economic inequality",
+            "Parent involvement varies by socioeconomic status and cultural factors beyond school control",
+            "Doesn't address curriculum standards, assessment methods, or structural issues"
+        ],
+        "why_challenging": "Popular education reforms that have been tried extensively with limited success",
+        "expected_generous_score": "7/10 - addresses multiple important factors in education quality",
+        "expected_adversarial_score": "3/10 - expensive interventions with limited evidence of effectiveness, ignores systemic constraints"
+    }
+]

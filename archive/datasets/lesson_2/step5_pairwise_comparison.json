@@ -1,0 +1,57 @@
+[
+    {
+        "id": "pair_001",
+        "question": "What is the most important skill for career success?",
+        "answer_a": "Communication is the most important skill because it enables you to share ideas, collaborate with teams, and build professional relationships. Even the most brilliant technical skills are useless if you can't communicate them effectively.",
+        "answer_b": "Adaptability is the most crucial skill in today's rapidly changing economy. Technology, markets, and job requirements constantly evolve, so the ability to learn new skills and adjust to change determines long-term career survival.",
+        "rating_scale_problem": "If asked to rate each answer 1-10, both might get 7-8/10 for being reasonable, making the comparison unclear",
+        "pairwise_advantage": "Direct comparison forces choice and reasoning: which factor is MORE important for career success?",
+        "why_challenging": "Both answers are well-reasoned and address different aspects of career success - communication (immediate effectiveness) vs adaptability (long-term resilience)",
+        "expected_rating_scores": "A: 7.5/10, B: 7.5/10 - both sound reasonable",
+        "expected_pairwise": "Slightly favor B because adaptability is more fundamental - you can adapt to learn better communication, but communication skills become obsolete without adaptability"
+    },
+    {
+        "id": "pair_002", 
+        "question": "Should governments invest more in space exploration?",
+        "answer_a": "Yes, space exploration drives technological innovation that benefits everyone. GPS, satellite communication, weather forecasting, and many medical technologies originated from space programs. The economic returns from space investment are enormous.",
+        "answer_b": "No, governments should focus on urgent Earth-based problems first. Climate change, poverty, healthcare, and education need immediate attention and resources. Space exploration is a luxury we can't afford while people are suffering.",
+        "rating_scale_problem": "Both represent valid political perspectives, might both get moderate scores without clear distinction",
+        "pairwise_advantage": "Forces direct comparison of priorities: technological advancement vs immediate human needs",
+        "why_challenging": "Classic resource allocation debate with strong arguments on both sides - innovation vs immediate needs",
+        "expected_rating_scores": "A: 6/10, B: 6/10 - both have merit but neither is comprehensive",
+        "expected_pairwise": "Favor A because historical evidence shows space investment creates technologies that address Earth problems (satellite monitoring for climate, medical devices, etc.)"
+    },
+    {
+        "id": "pair_003",
+        "question": "What's the best way to learn a new programming language?",
+        "answer_a": "Start with tutorials and documentation to understand syntax and concepts systematically. Work through structured courses that build knowledge step by step. This gives you a solid foundation before attempting real projects.",
+        "answer_b": "Jump straight into building a project you care about. Learn syntax and concepts as you need them to solve real problems. This approach is more engaging and teaches practical skills immediately.",
+        "rating_scale_problem": "Both are legitimate learning approaches, might get similar moderate-high scores",
+        "pairwise_advantage": "Forces comparison of learning philosophies: structured foundation vs project-based learning",
+        "why_challenging": "Different approaches work better for different learning styles and contexts",
+        "expected_rating_scores": "A: 7/10, B: 7/10 - both are recognized effective approaches",
+        "expected_pairwise": "Slight favor to B because project-based learning has higher retention rates and motivation, though acknowledging A works better for some learners"
+    },
+    {
+        "id": "pair_004",
+        "question": "Is remote work better than office work?",
+        "answer_a": "Remote work is better because it eliminates commute time, reduces costs, and gives people flexibility to work when they're most productive. It also opens up job opportunities regardless of geographic location and improves work-life balance.",
+        "answer_b": "Office work is better because face-to-face collaboration is more effective, it's easier to build relationships with colleagues, and there are fewer distractions. Office environments also provide better separation between work and personal life.",
+        "rating_scale_problem": "Both cite real advantages, likely to get similar scores around 6-7/10",
+        "pairwise_advantage": "Forces weighing of trade-offs: flexibility/efficiency vs collaboration/boundaries",
+        "why_challenging": "Both answers identify genuine benefits without acknowledging the trade-offs or individual variation",
+        "expected_rating_scores": "A: 6.5/10, B: 6.5/10 - both highlight real benefits",
+        "expected_pairwise": "Favor A because the benefits (time savings, geographic flexibility, work-life balance) have broader applicability than B's benefits which vary by role and individual preferences"
+    },
+    {
+        "id": "pair_005", 
+        "question": "What causes people to change their political views?",
+        "answer_a": "People change political views when they encounter new information that contradicts their existing beliefs. Exposure to different perspectives through education, travel, or diverse social circles helps people update their positions based on evidence.",
+        "answer_b": "Political views change mainly due to personal experiences and life circumstances. Getting a job, starting a family, experiencing economic hardship, or being affected by specific policies makes people reconsider their positions in ways that abstract arguments cannot.",
+        "rating_scale_problem": "Both describe real mechanisms of attitude change, might get similar psychological credibility scores",
+        "pairwise_advantage": "Forces comparison of information-based vs experience-based change mechanisms",
+        "why_challenging": "Both are supported by psychological research - cognitive vs experiential routes to attitude change",
+        "expected_rating_scores": "A: 7/10, B: 7/10 - both describe documented psychological phenomena",
+        "expected_pairwise": "Favor B because research shows personal experience is more powerful than abstract information for changing deeply held beliefs, though both mechanisms operate"
+    }
+]

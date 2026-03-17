@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "question": "What were the key outcomes of the Treaty of Versailles?",
+    "answer": "The Treaty of Versailles (1919) ended World War I and imposed several conditions on Germany: (1) Germany accepted sole responsibility for the war (Article 231, the 'War Guilt Clause'), (2) Germany was required to pay 132 billion gold marks in reparations, (3) Germany lost territories including Alsace-Lorraine to France, the Saar Basin was placed under League of Nations control, and the Polish Corridor was created, (4) The German military was limited to 100,000 troops with no air force, (5) The League of Nations was established, though the United States never joined due to Senate opposition led by Henry Cabot Lodge, (6) Germany's overseas colonies were redistributed as mandates under the League.",
+    "source_documents": "The Treaty of Versailles was signed on June 28, 1919. Key provisions: Article 231 (War Guilt Clause) assigned responsibility to Germany. Reparations were set at 132 billion gold marks. Germany lost Alsace-Lorraine to France. Military restricted to 100,000 troops, no air force. The League of Nations was created. The US Senate rejected the treaty.",
+    "hallucinated_claims": ["The Saar Basin was placed under League of Nations control - TRUE but not in source", "The Polish Corridor was created - TRUE but not in source", "Germany's overseas colonies were redistributed as mandates - TRUE but not in source, partially hallucinated detail"],
+    "verified_claims": ["War Guilt Clause in Article 231", "132 billion gold marks reparations", "Alsace-Lorraine returned to France", "Military limited to 100,000 troops", "League of Nations created", "US Senate rejected"],
+    "notes": "Tricky case - hallucinated claims happen to be historically accurate but are NOT supported by the provided source documents. Tests whether judge evaluates against source vs general knowledge."
+  },
+  {
+    "id": 2,
+    "question": "Summarize the key features of Python 3.12.",
+    "answer": "Python 3.12 introduced several notable features: (1) Improved error messages with more precise tracebacks, (2) Support for the 'perf' profiler on Linux, (3) Comprehension inlining for better performance, (4) A new type parameter syntax (PEP 695) allowing 'type X = int | str', (5) The 'buffer protocol' accessible from Python (PEP 688), (6) Built-in support for TOML parsing via the tomllib module, (7) A new 'match' statement for structural pattern matching, (8) Removal of many deprecated modules from the standard library.",
+    "source_documents": "Python 3.12 release highlights: Improved error messages with more helpful tracebacks. Per-interpreter GIL (PEP 684). Type parameter syntax (PEP 695). Comprehension inlining. Support for Linux perf profiler. Buffer protocol (PEP 688). Removal of deprecated modules (distutils, etc.).",
+    "hallucinated_claims": ["Built-in support for TOML parsing via tomllib - this was Python 3.11, not 3.12", "A new 'match' statement for structural pattern matching - this was Python 3.10, not 3.12"],
+    "verified_claims": ["Improved error messages", "Support for perf profiler", "Comprehension inlining", "Type parameter syntax PEP 695", "Buffer protocol PEP 688", "Removal of deprecated modules"],
+    "notes": "Version confusion hallucination - mixes features from different Python releases. tomllib was 3.11, match statement was 3.10. Both are real Python features but attributed to wrong version."
+  },
+  {
+    "id": 3,
+    "question": "What is the mechanism of action of aspirin?",
+    "answer": "Aspirin (acetylsalicylic acid) works primarily by irreversibly inhibiting cyclooxygenase enzymes (COX-1 and COX-2). By acetylating a serine residue in the active site of these enzymes, aspirin blocks the production of prostaglandins and thromboxanes. This reduces inflammation (via COX-2 inhibition), pain, and fever. At low doses, aspirin preferentially inhibits COX-1 in platelets, reducing thromboxane A2 production and thus inhibiting platelet aggregation, which is why low-dose aspirin is used for cardiovascular protection. Aspirin also activates the AMPK pathway, which contributes to its anti-inflammatory effects through a COX-independent mechanism.",
+    "source_documents": "Aspirin mechanism: Irreversible inhibition of COX-1 and COX-2 by acetylation of serine residue. Blocks prostaglandin and thromboxane synthesis. Anti-inflammatory via COX-2, antiplatelet via COX-1 (low-dose inhibits thromboxane A2). Used for pain, fever, inflammation, and cardiovascular protection.",
+    "hallucinated_claims": ["Aspirin also activates the AMPK pathway, which contributes to its anti-inflammatory effects through a COX-independent mechanism - this is a research finding not in the source, and the AMPK connection is still debated in literature"],
+    "verified_claims": ["Irreversible COX-1 and COX-2 inhibition", "Acetylation of serine residue", "Blocks prostaglandins and thromboxanes", "Low-dose preferentially inhibits COX-1 in platelets", "Reduces thromboxane A2", "Cardiovascular protection use"],
+    "notes": "Subtle scientific hallucination - AMPK pathway claim is from real research papers but NOT in the provided source. Tests whether judge can distinguish 'true but unsourced' from 'verified by source'."
+  },
+  {
+    "id": 4,
+    "question": "Describe the architecture of a typical REST API.",
+    "answer": "A typical REST API follows these architectural principles: (1) Client-server separation - the client and server are independent, (2) Statelessness - each request contains all information needed, no session state on server, (3) Cacheability - responses must define themselves as cacheable or not, (4) Uniform interface - standardized resource identification via URIs, (5) Layered system - client can't tell if connected directly to server or intermediary. Implementation typically uses HTTP methods: GET (read), POST (create), PUT (update), DELETE (remove), PATCH (partial update). Responses use standard HTTP status codes: 200 (OK), 201 (Created), 204 (No Content), 400 (Bad Request), 401 (Unauthorized), 404 (Not Found), 500 (Server Error). REST APIs must use JSON as the data format, and all REST APIs require OAuth 2.0 for authentication.",
+    "source_documents": "REST (Representational State Transfer) architectural constraints: client-server, stateless, cacheable, uniform interface, layered system. Uses HTTP methods: GET, POST, PUT, DELETE, PATCH. Standard status codes for responses. Resources identified by URIs. Can use various data formats including JSON, XML, etc. Authentication methods vary: API keys, OAuth, JWT, basic auth, etc.",
+    "hallucinated_claims": ["REST APIs must use JSON as the data format - FALSE, REST is format-agnostic (JSON, XML, etc.)", "All REST APIs require OAuth 2.0 for authentication - FALSE, various auth methods exist"],
+    "verified_claims": ["Client-server separation", "Statelessness", "Cacheability", "Uniform interface with URIs", "Layered system", "HTTP methods listed correctly", "Status codes listed correctly"],
+    "notes": "False absolute claims at the end - 'must use JSON' and 'require OAuth 2.0' are both wrong. Tests if judge catches overstatements mixed into otherwise correct content."
+  },
+  {
+    "id": 5,
+    "question": "What are the main causes of deforestation in the Amazon rainforest?",
+    "answer": "The main causes of Amazon deforestation include: (1) Cattle ranching - the single largest driver, responsible for approximately 80% of deforestation, (2) Soybean farming - large-scale agriculture for animal feed and exports, (3) Logging - both legal and illegal timber extraction, (4) Infrastructure development - roads like the Trans-Amazonian Highway open remote areas, (5) Mining - gold mining and other mineral extraction, (6) Small-scale subsistence farming - slash-and-burn agriculture by local communities. Brazil's deforestation rate peaked in 2004 at approximately 27,000 km² per year, declined significantly through policy interventions and monitoring (DETER/PRODES satellite systems), but has seen recent increases. The Amazon has lost approximately 17% of its forest cover in the last 50 years, approaching the estimated 20-25% 'tipping point' where the forest could transition to savanna.",
+    "source_documents": "Amazon deforestation causes: Cattle ranching (largest driver, ~80%), soy farming, logging (legal and illegal), infrastructure (roads), mining, subsistence farming. Brazil peak deforestation ~27,000 km²/year in 2004. Satellite monitoring via DETER and PRODES. Approximately 17% forest cover lost in 50 years.",
+    "hallucinated_claims": ["Approaching the estimated 20-25% 'tipping point' where the forest could transition to savanna - this is from scientific literature (Lovejoy & Nobre) but not in the provided source"],
+    "verified_claims": ["Cattle ranching ~80%", "Soy farming", "Logging", "Infrastructure/roads", "Mining", "Subsistence farming", "Peak 27,000 km²/year in 2004", "DETER/PRODES monitoring", "~17% forest cover lost"],
+    "notes": "Nearly perfect answer with one unsourced (but factually accurate) tipping point claim. Tests precision of hallucination detection - can the judge flag this as 'not in source' even though it's true?"
+  }
+]
